@@ -1,5 +1,5 @@
 *{margin:0;padding:0;outline:none;}
-html,body{background:#FFF;color:#333;font-family: theinhardt, Helvetica Neue, Helvetica, Arial, sans-serif; margin:0; padding:0; height:100%; width:100%;}
+html,body{background:#FFF;color:#333;font-family: theinhardt, Helvetica Neue, Helvetica, Arial, sans-serif; margin:0; padding:0; height:100%; width:100%; overflow-x:hidden;}
 
 @font-face {
   font-family: 'arnhemlf';
