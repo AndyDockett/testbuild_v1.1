@@ -16,10 +16,15 @@ a{color:#000;text-decoration:none;}
 .fullimg .center h6{font-family: arnhemlf, Georgia, Times, serif;font-size:22px;}
 .fullimg .center p{font-family: arnhemlf, Georgia, Times, serif;font-size:22px;font-style: italic;}
 
-.autoheight{height:auto;min-height:auto;border-bottom:none;}
+
 div.content{-webkit-transform: scale(0.5);}
 .introimg{width:900px;margin:30px auto;}
-div.billedserie{width:100%;margin:120px auto 30px;text-align:center;-webkit-transform: scale(0.5); }
+div.billedserie{
+	width: 100%;
+	margin: auto auto 30px;
+	text-align: center;
+	
+}
 section{width:2048px;margin:0 auto;display:block;clear:both;position:relative;}
 body.billederserie section{margin:0 auto !important;}
 section .inner{width:1668px;margin:0 auto;display:block;padding:30px;overflow:auto;position:relative;}
