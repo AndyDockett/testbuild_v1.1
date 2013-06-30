@@ -1,42 +1,49 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
+<html style='background:rgb(246,246,246);'>
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="Absorb Magazine - www.absorb.com" />
+	<meta name="description" content="Absorb Magazine - www.absorb.com" />
+	<meta name="viewport" content="width=2048">
+	<title>Absorb</title>
+	<link type="image/x-icon" rel="shortcut icon" href="media/images/ui/favicon.ico" />
+	<meta name="apple-mobile-web-app-title" content="Absorb">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/apple-touch-icon-57x57-precomposed.png">
 
-    http://www.apache.org/licenses/LICENSE-2.0
+	<link rel="stylesheet" href="css/stylesheet.css?<?php echo time(); ?>" media="all" />
+	<script src="js/jquery.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body style='background:rgb(246,246,246);'>
 
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="phonegap.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
-    </body>
+	<section>
+		
+		<div class='billedserie'>
+			<div style='background:rgb(246,246,246);position:absolute;top:-5px;left:0;right:0;height:30px;'></div>
+			<video width='2000' height='1125' controls='false' autoplay loop mute style='background:rgb(246,246,246);'>
+				<source src='video/Fischer_1.mov'>
+			</video>
+		</div>
+		
+	</section>
+	<img src='img/page1/absorblogo.png' style='position:absolute;left:50%;margin-left:-340px;top:580px;'>
+	<img src='img/page1/statistics.png' style='position:absolute;left:50%;margin-left:-159px;top:740px;'>
+	
+
+<script type="text/javascript">
+ $(function(){
+	$("video").load();
+	setTimeout(function(){
+		$("video").trigger("click").play();
+	},1000);
+});
+/*$("video").live("touchstart",function(){
+	var i = setInterval(function(){
+		$("video").currentTime = 0;
+	},7000);
+});*/
+</script>
+
+</body>
 </html>
