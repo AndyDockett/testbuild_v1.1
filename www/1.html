@@ -1,0 +1,65 @@
+<div class='ipadscale'>
+	<section class='forside'>
+		<h1 style='margin-top:370px; text-align:center;'><em>Editorial</em></h1>
+		<h1 style='text-align:center;'>The editorial will go here</h1>
+		
+	</section>
+
+<script type="text/javascript">
+function getClosestElement(x, y, elements) {
+    var el, offset, dist, minDist, closestEl;
+    minDist = 800;
+    for (var i=0; i < elements.length; i++) {
+        el = elements.eq(i);
+        offset = el.offset();
+        offset.left += el.outerWidth()/2; // center of object
+        offset.top += el.outerHeight()/2; // middle of object
+        dist = Math.sqrt((offset.left - x)*(offset.left - x) + (offset.top - y)*(offset.top - y));
+        if (dist < minDist) {
+            minDist = dist;
+            closestEl = el;
+        }
+    }
+    return closestEl;
+}
+$(function(){
+	$("section").addClass("pickme");
+	$("section:first-child").removeClass("pickme");
+});
+$(window).scroll(function(){
+	var y = $(window).scrollTop()+400;
+	var el = $("section.pickme");
+	var x = 400;
+	var closest = getClosestElement(x,y,el);
+	if(closest.length==0){
+		el = $("section");
+		closest = getClosestElement(x,y,el);
+	}
+	var top = closest.offset().top;
+	if(!$("body").hasClass("scrolling")){
+		$("body").addClass("scrolling");
+		$("html, body").animate({scrollTop: top},600,function(){ 
+			setTimeout(function(){
+				$("body").removeClass("scrolling"); 
+				$("section").addClass("pickme");
+				closest.removeClass("pickme");
+			},100);
+		});
+	}
+});
+
+
+$("html, body").live("touchstart",function(){
+	if(!$(".box2").is(":hover")){
+		$(".box2").css({display:"none",opacity:0});
+	}
+});
+$("a[href=#box]").live("click",function(){
+	var d = $(this);
+	var f = d.attr("for");
+	var top = d.offset().top-500;
+	$(".box2[id="+f+"]").css({display:"block",top:top}).animate({opacity:1},500);
+	return false;
+});
+</script>
+</div>

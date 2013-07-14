@@ -1,43 +1,110 @@
-<!DOCTYPE html>
-<html style='background:rgb(246,246,246);'>
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width; initial-scale=0.5; maximum-scale=0.5" />
-<meta name="author" content="Absorb Magazine - www.absorb.com" />
-	<meta name="description" content="Absorb Magazine - www.absorb.com" />
-	<title>Absorb</title>
-	<link type="image/x-icon" rel="shortcut icon" href="media/images/ui/favicon.ico" />
-	<meta name="apple-mobile-web-app-title" content="Absorb">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/apple-touch-icon-57x57-precomposed.png">
 
-	<link rel="stylesheet" href="css/stylesheetstandards.css" media="all" />
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Swiper Demos</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=0.5">
+
+<!--<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>-->
+<link rel="stylesheet" href="css/idangerous.swiper.css">
+<!--<link rel="stylesheet" href="css/style.css?v=1.8">-->
+<link rel="stylesheet" href="css/swiper-demos.css?v=1.8">
+	<link rel="stylesheet" href="css/ipad.css">
+	<link rel="stylesheet" href="css/stylesheet.css" media="all" />
 	<script src="js/jquery.js"></script>
 	<script src="js/script.js"></script>
+    
+<script  src="js/libs/jquery-1.7.1.min.js"></script>
+
+
+<style>
+    p{position: relative; color: black;}
+    body{margin: 0; padding: 0;}
+    #climbing_img{position: relative; top 10%;left: 10%;height: 300px;}
+    .text_slide{font-size: 25px; color: black;}
+    .generic_img{position: relative; width: 90%;-webkit-transform:translate3d(0px,0,0)}
+    .page_container{position: relative; height: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch;}
+    
+    /*CSS3 caching - needs to be at the bottom of the style sheet*/
+	
+	
+    body:after{content:url(imgs/img_1.jpg) url(imgs/img_2.jpg) url(imgs/img_3.jpg) url(imgs/img_4.jpg) url(imgs/img_5.jpg) url(imgs/img_6.jpg) url(imgs/img_7.jpg) url(imgs/img_8.jpg) url(imgs/img_9.jpg) url(imgs/img_10.jpg);display:none;}
+    
+</style>
+
+
+<!-- Adjusting swiper dimensions needs to be declared before the main swiper js so that the appropriate calculations can be made -->
+<script type="text/javascript">
+$(document).ready(function() {
+
+    document.body.setAttribute("orient", "landscape");
+    
+    $('.swiper-container').css('width', $(window).width());
+    $('.swiper-container').css('height', $(window).height());
+    $('.swiper-slide').css('width', $(window).width());
+    $('.swiper-slide').css('height', $(window).height());
+    
+    $(window).bind('orientationchange resize', OrientationChangeHandler);
+    
+    function OrientationChangeHandler(event){
+        $('.swiper-container').css('width', $(window).width());
+        $('.swiper-container').css('height', $(window).height());
+        $('.swiper-slide').css('width', $(window).width());
+        $('.swiper-slide').css('height', $(window).height());
+        swiperN1.reInit();
+    };
+    
+});
+/*
+var request = new XMLHttpRequest();
+    request.open("GET", "testing.html", true);
+    request.onreadystatechange = function(){
+        if (request.readyState == 4) {
+            if (request.status == 200 || request.status == 0) {
+                console.log("response " + request.responseText);
+                var response_text = request.responseText;
+                $('.orange-slide').html(response_text);
+            }
+        }
+    }
+    request.send();
+    */
+</script>
+
+<!-- Swiper -->
+<script  src="js/idangerous.swiper-1.9.3.min.js"></script>
+<!-- Swiper Scrollbar plugin -->
+<!--<script  src="js/idangerous.swiper.scrollbar-1.2.js"></script>-->
+<!-- Demos code -->
+<script  src="js/swiper-demos.js"></script>
 </head>
-<body style='background:rgb(246,246,246);'>
 
-	
-		
-		<div class='content'>
-        
-     <section>
-		
-		<div class='billedserie'>
-			<div style='background:rgb(246,246,246);position:absolute;top:-5px;left:0;right:0;height:30px;'></div>
-			<video width='2000' height='1125' autoplay loop mute style='background:rgb(246,246,246);'>
-				<source src='Fischer_1.mov'>
-			</video>
-		
-		</div>
-	</section>
-		
-	
-	<img src='img/page1/absorblogo.png' style='position:absolute;left:50%;margin-left:-340px;top:580px;'>
-	<img src='img/page1/statistics.png' style='position:absolute;left:50%;margin-left:-159px;top:740px;'>
-	
+<body>
+
+  <div class="swiper-container swiper-nested1 swiper-n1 main_container">
+    <!--<div class="pagination-nested1 pagination-n1"></div>-->
+    <div class="swiper-wrapper main_wrapper">
+      <div id="pg_0" class="swiper-slide red-slide"> Slide 1 <br><video id="myVid" src="paul_robinson.mp4" width="290" height="290" controls>??not supported??</video></div>
+      <div id="pg_1" class="swiper-slide orange-slide">Slide 2 </div>
+      <div id="pg_2" class="swiper-slide green-slide"> Slide 3 </div>
+      <div id="pg_3" class="swiper-slide red-slide"> Slide 4 </div>
+      <div id="pg_4" class="swiper-slide orange-slide"> Slide 5 </div>
+      <div id="pg_5" class="swiper-slide green-slide"> Slide 6 </div>
+      <div id="pg_6" class="swiper-slide red-slide"> Slide 7 </div>
+      <div id="pg_7" class="swiper-slide orange-slide"> Slide 8 </div>
+      <div id="pg_8" class="swiper-slide green-slide"> Slide 9 </div>
+      <div id="pg_9" class="swiper-slide red-slide"> Slide 10 </div>
+      <div id="pg_10" class="swiper-slide orange-slide"> Slide 11 </div>
     </div>
-
+  </div>
 <script type="text/javascript">
  $(function(){
 	$("video").load();
@@ -52,5 +119,62 @@
 });*/
 </script>
 
+<script type="text/javascript">
+function getClosestElement(x, y, elements) {
+    var el, offset, dist, minDist, closestEl;
+    minDist = 800;
+    for (var i=0; i < elements.length; i++) {
+        el = elements.eq(i);
+        offset = el.offset();
+        offset.left += el.outerWidth()/2; // center of object
+        offset.top += el.outerHeight()/2; // middle of object
+        dist = Math.sqrt((offset.left - x)*(offset.left - x) + (offset.top - y)*(offset.top - y));
+        if (dist < minDist) {
+            minDist = dist;
+            closestEl = el;
+        }
+    }
+    return closestEl;
+}
+$(function(){
+	$("section").addClass("pickme");
+	$("section:first-child").removeClass("pickme");
+});
+$(window).scroll(function(){
+	var y = $(window).scrollTop()+400;
+	var el = $("section.pickme");
+	var x = 400;
+	var closest = getClosestElement(x,y,el);
+	if(closest.length==0){
+		el = $("section");
+		closest = getClosestElement(x,y,el);
+	}
+	var top = closest.offset().top;
+	if(!$("body").hasClass("scrolling")){
+		$("body").addClass("scrolling");
+		$("html, body").animate({scrollTop: top},600,function(){ 
+			setTimeout(function(){
+				$("body").removeClass("scrolling"); 
+				$("section").addClass("pickme");
+				closest.removeClass("pickme");
+			},100);
+		});
+	}
+});
+
+
+$("html, body").live("touchstart",function(){
+	if(!$(".box2").is(":hover")){
+		$(".box2").css({display:"none",opacity:0});
+	}
+});
+$("a[href=#box]").live("click",function(){
+	var d = $(this);
+	var f = d.attr("for");
+	var top = d.offset().top-500;
+	$(".box2[id="+f+"]").css({display:"block",top:top}).animate({opacity:1},500);
+	return false;
+});
+</script>
 </body>
 </html>
