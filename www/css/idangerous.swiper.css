@@ -25,7 +25,7 @@
 	backface-visibility:hidden;
 	/* Fix of Webkit flickering */
 	z-index:1;
-	
+
 	
 }
 .swiper-wrapper {
@@ -36,6 +36,9 @@
 	-webkit-transform:translate3d(0px,0,0);
 	-webkit-transition-timing-function:ease;
 	-webkit-backface-visibility:hidden;
+	
+		
+	
 	
 	-moz-transition-property:-moz-transform, left, top;
 	-moz-transition-duration:0s;
@@ -63,6 +66,7 @@
 }
 .swiper-slide {
 	float: left;
+	
 }
 
 /* IE10 Windows Phone 8 Fixes */
@@ -75,6 +79,7 @@
 
 /* Specify Swiper's Size: */
 .swiper-container, .swiper-slide {
+		
 	/*width: 500px;
 	height: 200px;*/
 }

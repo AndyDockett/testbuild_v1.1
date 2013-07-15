@@ -2,6 +2,7 @@
 
 .red-slide {
 	background:#F6F6F6;
+
 	
 }
 .blue-slide {
@@ -26,7 +27,7 @@
 }
 /* looks like the swiper-slide needs some initial height and width... if disabled then swiper on indexpg 7 doesn't work consistently */
 .swiper-nested1, .swiper-nested1 .swiper-slide {
-	width:1024px;
+	/*width:1024px;
 	height:768px;
 	/*color:#fff;
 	text-align:center;
