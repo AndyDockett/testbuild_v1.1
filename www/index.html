@@ -12,12 +12,12 @@
     <script src="js/didi.js" type="text/javascript"></script>
     <script>
         $(document).ready(function() {
-            $("body").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("page.html", "slide");
+            $("#port").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("editorial.html", "slide");
             });
             
             <!--note the div id--> 
-			$("#swipeRight").live('swiperight', function (event, ui) {
+			$("#editorial").live('swiperight', function (event, ui) {
                 $.mobile.changePage("index.html", { transition: "reverse slide"});
 			});
 			
@@ -34,16 +34,11 @@
 
 <body>
 <div id="container">
-	<div data-role="page" id="page1">b
-        <div data-role="header">
-            Header
-        </div>
-        		<div data-role="content">c
-            		<div id="swipeLeft" width="100%" style="background-color:Gray">
-            		<br /><a href="page.html" data-prefetch data-transition="slide">Swipe Me Left</a><br /><br />
-            		</div>
-        		</div>
-	</div>
+  <div data-role="page" class="main" id="mainpage">
+    		<div id="port">
+   		  <img src="img/port.jpg" width="768" height="1024"> 
+          	</div>
+    </div>
 </div>
 <!--<script type="text/javascript">
 
