@@ -16,22 +16,20 @@
     <script src="js/didi.js" type="text/javascript"></script>
     <script>
         $(document).ready(function() {
-            $("#port-nav").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("editorial.html", "slide");
+            $("#port-nav").live('swipeup', function (event, ui) {
+                $.mobile.changePage("editorial.html", "slideup");
             });
             
             <!--note the div id--> 
-			$("#editorial").live('swiperight', function (event, ui) {
+			$("#editorial").live('swipeleft', function (event, ui) {
                 $.mobile.changePage("index.html", { transition: "reverse slide"});
 			});
 			
-			$("body").live('swipedown', function (event, ui) {
+			$("#instruct").live('swipedown', function (event, ui) {
                 $.mobile.changePage("page.html", { transition: "reverse slide"});
 			});
 			
-			$("body").live('swipeup', function (event, ui) {
-                $.mobile.changePage("page.html", { transition: "slideup"});
-			});
+			
         }); 
     </script>
 </head>

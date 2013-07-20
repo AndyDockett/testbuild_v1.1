@@ -6,6 +6,7 @@
             margin: 0;
 			 width: 1024px;
             height: 768px;
+			-webkit-user-drag: none;
 			
 			
 		
@@ -26,6 +27,7 @@
 -webkit-backface-visibility: hidden;
 background:rgb(246,246,246);
 -webkit-transform: translate3d(0, 0, 0);
+	-webkit-user-drag: none;
 }
 
 
@@ -41,7 +43,7 @@ background:rgb(246,246,246);
 		
 		#port-image	{
 			-webkit-backface-visibility: hidden;
-			-webkit-transform: translate3d(0, 0, 0);
+			
 		
 		}
 			
@@ -51,16 +53,22 @@ background:rgb(246,246,246);
 		
 			
 		}
+		
+		#port-nav	{
+			
+			-webkit-transform: translate3d(0, 0, 0);
+		
+			
+		}
 		#mainpage	{
-		-webkit-transform: translate3d(0, 0, 0);
-		-webkit-backface-visibility: hidden;
+		
 			
 				}
 				
 				
 				#editorial	{
 		
-			
+			-webkit-transform: translate3d(0, 0, 0);
 			
 		}
  /* Phonegap specific*/		
