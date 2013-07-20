@@ -170,11 +170,11 @@
 			
 			<!--synge--> 
 			
-			$("#synge").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("love1.html", { transition: "slide"});
+			$("#synge").live('swipeup', function (event, ui) {
+                $.mobile.changePage("love1.html", { transition: "slide up"});
 			});
-			$("#synge").live('swiperight', function (event, ui) {
-                $.mobile.changePage("count.html", { transition: "reverse slide"});
+			$("#synge").live('swipedown', function (event, ui) {
+                $.mobile.changePage("count.html", { transition: "slide down"});
 			});
 			
 			
@@ -225,7 +225,7 @@
                 $.mobile.changePage("diagrams4.html", { transition: "slideup"});
 			});
 			
-			<!--diagrams43--> 
+			<!--diagrams4--> 
 			
 			$("#diagrams4").live('swipedown', function (event, ui) {
                 $.mobile.changePage("diagrams3.html", { transition: "slidedown"});
@@ -241,7 +241,16 @@
                 $.mobile.changePage("diagrams4.html", { transition: "slidedown"});
 			});
 			$("#diagrams5").live('swipeup', function (event, ui) {
-                $.mobile.changePage("imagine.html", { transition: "slideup"});
+                $.mobile.changePage("imagine1.html", { transition: "slideup"});
+			});
+			
+			<!--imagine1--> 
+			
+			$("#dimagine1").live('swiperight', function (event, ui) {
+                $.mobile.changePage("diagrams5.html", { transition: "reverse slide"});
+			});
+			$("#imagine1").live('swipleft', function (event, ui) {
+                $.mobile.changePage("imagine1.html", { transition: "slide"});
 			});
         }); 
     </script>
