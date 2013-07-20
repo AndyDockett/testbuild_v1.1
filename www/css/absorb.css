@@ -6,6 +6,7 @@
             margin: 0;
 			 width: 1024px;
             height: 768px;
+			
         }
  
  
@@ -41,3 +42,13 @@
 			
 			
 		}
+ /* Phonegap specific*/		
+		* {
+text-shadow: none !important;
+-webkit-box-shadow: none !important;
+-webkit-border-radius:0 !important;
+-webkit-border-top-left-radius:0 !important;
+-webkit-border-bottom-left-radius:0 !important;
+-webkit-border-bottom-right-radius:0 !important;
+-webkit-border-top-right-radius:0 !important;
+}
