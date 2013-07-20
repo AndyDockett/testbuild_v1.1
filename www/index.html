@@ -44,7 +44,20 @@
 			});
 			
 			$("#monuments").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("monuments1.html", { transition: "slide"});
+                $.mobile.changePage("count.html", { transition: "slide"});
+			});
+			
+			$("#monuments").live('swipeup', function (event, ui) {
+                $.mobile.changePage("monuments1.html", { transition: "slideup"});
+            });
+			
+			<!--monuments1--> 
+			$("#monuments1").live('swipeup', function (event, ui) {
+                $.mobile.changePage("monuments2.html", { transition: "slideup"});
+			});
+			
+			$("#monuments").live('swipedown', function (event, ui) {
+                $.mobile.changePage("monuments.html", { transition: "slidedown"});
 			});
 			
 			
