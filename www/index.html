@@ -171,11 +171,33 @@
 			<!--synge--> 
 			
 			$("#synge").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("synge.html", { transition: "slide"});
+                $.mobile.changePage("love1.html", { transition: "slide"});
 			});
 			$("#synge").live('swiperight', function (event, ui) {
                 $.mobile.changePage("count.html", { transition: "reverse slide"});
 			});
+			
+			
+			
+			<!--love1--> 
+			
+			$("#love1").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("love2.html", { transition: "slide"});
+			});
+			$("#synge").live('swiperight', function (event, ui) {
+                $.mobile.changePage("synge.html", { transition: "reverse slide"});
+			});
+			
+			
+			<!--love2--> 
+			
+			$("#love2").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("diagrams1.html", { transition: "slide"});
+			});
+			$("#synge").live('swiperight', function (event, ui) {
+                $.mobile.changePage("love1.html", { transition: "reverse slide"});
+			});
+			
 			
 			
         }); 
