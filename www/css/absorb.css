@@ -27,7 +27,8 @@
 		
 		#port	{
 			-webkit-transform:scale(0.5) rotate(90deg);
-			-webkit-transform-origin:768px 400px;
+			-webkit-transform-origin:50% 50%;
+		
 		}
 			
 			#video-port	{
