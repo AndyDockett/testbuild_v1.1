@@ -1,0 +1,14 @@
+
+/* CSS Document */
+
+ body {
+            /* Setting body margins to 0 to have proper positioning of #container div */
+            margin: 0;
+        }
+ 
+ 
+  /* Remove Flicker on changepage */
+ 
+ .ui-page {
+-webkit-backface-visibility: hidden;
+}
