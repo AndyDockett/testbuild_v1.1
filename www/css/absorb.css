@@ -26,8 +26,9 @@
         }
 		
 		#port	{
-			-webkit-transform:rotate(90deg);
+			-webkit-transform:scale(0.5) rotate(90deg);
 			-webkit-transform-origin:center center;
+			
 		
 			
 		}
