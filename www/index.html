@@ -184,7 +184,7 @@
 			$("#love1").live('swipeleft', function (event, ui) {
                 $.mobile.changePage("love2.html", { transition: "slide"});
 			});
-			$("#synge").live('swiperight', function (event, ui) {
+			$("#love1").live('swiperight', function (event, ui) {
                 $.mobile.changePage("synge.html", { transition: "reverse slide"});
 			});
 			
@@ -194,12 +194,55 @@
 			$("#love2").live('swipeleft', function (event, ui) {
                 $.mobile.changePage("diagrams1.html", { transition: "slide"});
 			});
-			$("#synge").live('swiperight', function (event, ui) {
+			$("#love2").live('swiperight', function (event, ui) {
                 $.mobile.changePage("love1.html", { transition: "reverse slide"});
 			});
 			
+			<!--diagrams1--> 
+			
+			$("#diagrams1").live('swipedown', function (event, ui) {
+                $.mobile.changePage("love2.html", { transition: "slidedown"});
+			});
+			$("#diagrams1").live('swipeup', function (event, ui) {
+                $.mobile.changePage("diagrams2.html", { transition: "slideup"});
+			});
+			
+			<!--diagrams2--> 
+			
+			$("#diagrams2").live('swipedown', function (event, ui) {
+                $.mobile.changePage("diagrams1.html", { transition: "slidedown"});
+			});
+			$("#diagrams2").live('swipeup', function (event, ui) {
+                $.mobile.changePage("diagrams3.html", { transition: "slideup"});
+			});
+			
+			<!--diagrams3--> 
+			
+			$("#diagrams3").live('swipedown', function (event, ui) {
+                $.mobile.changePage("diagrams2.html", { transition: "slidedown"});
+			});
+			$("#diagrams3").live('swipeup', function (event, ui) {
+                $.mobile.changePage("diagrams4.html", { transition: "slideup"});
+			});
+			
+			<!--diagrams43--> 
+			
+			$("#diagrams4").live('swipedown', function (event, ui) {
+                $.mobile.changePage("diagrams3.html", { transition: "slidedown"});
+			});
+			$("#diagrams4").live('swipeup', function (event, ui) {
+                $.mobile.changePage("diagrams5.html", { transition: "slideup"});
+			});
 			
 			
+			<!--diagrams5--> 
+			
+			$("#diagrams5").live('swipedown', function (event, ui) {
+                $.mobile.changePage("diagrams4.html", { transition: "slidedown"});
+			});
+			$("#diagrams5").live('swipeup', function (event, ui) {
+                $.mobile.changePage("imagine.html", { transition: "slideup"});
+			});
         }); 
     </script>
 </head>
