@@ -17,7 +17,7 @@
     <script>
         $(document).ready(function() {
             $("#port-image").live('swipeup', function (event, ui) {
-                $.mobile.changePage("editorial.html", "slideUp");
+                $.mobile.changePage("editorial.html", { transition: "slideup"});
             });
             
             <!--note the div id--> 
