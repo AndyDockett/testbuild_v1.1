@@ -20,13 +20,31 @@
                 $.mobile.changePage("editorial.html", { transition: "slideup"});
             });
             
-            <!--note the div id--> 
-			$("#editorial").live('swipeleft', function (event, ui) {
+            <!--editorial--> 
+			$("#editorial").live('swiperight', function (event, ui) {
                 $.mobile.changePage("index.html", { transition: "reverse slide"});
 			});
 			
-			$("#instruct").live('swipedown', function (event, ui) {
-                $.mobile.changePage("page.html", { transition: "reverse slide"});
+			$("#editorial").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("instruct.html", { transition: "slide"});
+			});
+			
+			<!--instruct--> 
+			$("#instruct").live('swiperight', function (event, ui) {
+                $.mobile.changePage("editorial.html", { transition: "reverse slide"});
+			});
+			
+			$("#instruct").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("monuments.html", { transition: "slide"});
+			});
+			
+			<!--monuments--> 
+			$("#monuments").live('swiperight', function (event, ui) {
+                $.mobile.changePage("instruct.html", { transition: "reverse slide"});
+			});
+			
+			$("#monuments").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("monuments1.html", { transition: "slide"});
 			});
 			
 			
