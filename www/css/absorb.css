@@ -7,16 +7,25 @@
 			 width: 1024px;
             height: 768px;
 			
+			
 		
 			
         }
- 
+		
+	/* image cache*/	
+	
+ body:after{
+	 
+	 content:url(images/page1/absorb_port.png); display:none;
+	 
+	 }
  
   /* Remove Flicker on changepage */
  
  .ui-page {
 -webkit-backface-visibility: hidden;
 background:rgb(246,246,246);
+-webkit-transform: translate3d(0, 0, 0);
 }
 
 
@@ -27,10 +36,12 @@ background:rgb(246,246,246);
             height: 100%;
 			-webkit-backface-visibility: hidden;
 			background:rgb(246,246,246);
+			-webkit-transform: translate3d(0, 0, 0);
         }
 		
-		#port	{
-			
+		#port-image	{
+			-webkit-backface-visibility: hidden;
+			-webkit-transform: translate3d(0, 0, 0);
 		
 		}
 			
@@ -41,7 +52,8 @@ background:rgb(246,246,246);
 			
 		}
 		#mainpage	{
-		
+		-webkit-transform: translate3d(0, 0, 0);
+		-webkit-backface-visibility: hidden;
 			
 				}
 				
