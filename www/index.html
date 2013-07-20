@@ -246,12 +246,14 @@
 			
 			<!--imagine1--> 
 			
-			$("#dimagine1").live('swiperight', function (event, ui) {
+			$("#imagine1").live('swiperight', function (event, ui) {
                 $.mobile.changePage("diagrams5.html", { transition: "reverse slide"});
 			});
-			$("#imagine1").live('swipleft', function (event, ui) {
-                $.mobile.changePage("imagine1.html", { transition: "slide"});
-			});
+			
+			$("#imagine1").live('swipeleft',function() {
+alert("No more to see just yet!");
+});
+			
         }); 
     </script>
 </head>
