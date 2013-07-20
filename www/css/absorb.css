@@ -4,6 +4,8 @@
  body {
             /* Setting body margins to 0 to have proper positioning of #container div */
             margin: 0;
+			 width: 1024px;
+            height: 768px;
         }
  
  
@@ -24,11 +26,18 @@
 		
 		#port	{
 			-webkit-transform:rotate(90deg);
-			width: 100%;
-            height: 100%;
+			-webkit-transform-origin:center center;
+		
 			
 		}
 		#mainpage	{
-			
+		
 			
 				}
+				
+				
+				#editorial	{
+		
+			
+			
+		}
