@@ -93,8 +93,8 @@ video{
  
 }
 
-#count2{
+#count2-nav{
 	
-	
-	overflow:scroll
+	overflow: scroll;
+-webkit-overflow-scrolling: touch;
 	}
