@@ -100,7 +100,10 @@ video{
 	
     overflow: scroll !important;
     -webkit-overflow-scrolling: touch !important;
-    
+    height: 768px;
+	position: absolute;
+  
+	 !important;
 }
 	
 
