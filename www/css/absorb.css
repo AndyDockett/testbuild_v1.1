@@ -26,9 +26,7 @@
  .ui-page {
 -webkit-backface-visibility: hidden;
 background:rgb(246,246,246);
--webkit-overflow-scrolling: touch;
-	
-	overflow:scroll;
+
 
 	
 }
@@ -41,9 +39,7 @@ background:rgb(246,246,246);
             height: 100%;
 			-webkit-backface-visibility: hidden;
 			background:rgb(246,246,246);
-			-webkit-overflow-scrolling: touch;
-	
-	overflow:scroll;
+			
 		
 			
 			
@@ -69,9 +65,7 @@ background:rgb(246,246,246);
 			
 		}
 		#mainpage	{
-		-webkit-overflow-scrolling: touch;
-	
-	overflow:scroll;
+		
 			
 				}
 				
@@ -103,9 +97,11 @@ video{
 }
 
 #count2-nav{
-	-webkit-overflow-scrolling: touch;
 	
-	overflow:scroll;
+    overflow: scroll !important;
+    -webkit-overflow-scrolling: touch !important;
+    
+}
 	
 
 
