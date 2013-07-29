@@ -6,6 +6,9 @@
             margin: 0;
 			 width: 1024px;
             height: 768px;
+			-webkit-backface-visibility: hidden;
+			 overflow: scroll !important;
+    		-webkit-overflow-scrolling: touch !important;
 			
 			
 			
