@@ -21,21 +21,21 @@
             });
             
             <!--editorial--> 
-			$("#editorial").live('swiperight', function (event, ui) {
-                $.mobile.changePage("index.html", { transition: "reverse slide"});
+			$("#editorial").live('swipedown', function (event, ui) {
+                $.mobile.changePage("index.html", { transition: "slidedown"});
 			});
 			
-			$("#editorial").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("instruct.html", { transition: "slide"});
+			$("#editorial").live('swipeup', function (event, ui) {
+                $.mobile.changePage("instruct.html", { transition: "slideup"});
 			});
 			
 			<!--instruct--> 
-			$("#instruct").live('swiperight', function (event, ui) {
-                $.mobile.changePage("editorial.html", { transition: "reverse slide"});
+			$("#instruct").live('swipedown', function (event, ui) {
+                $.mobile.changePage("editorial.html", { transition: "slidedown"});
 			});
 			
-			$("#instruct").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("monuments.html", { transition: "slide"});
+			$("#instruct").live('swipeup', function (event, ui) {
+                $.mobile.changePage("monuments.html", { transition: "slideups"});
 			});
 			
 			<!--monuments--> 
