@@ -13,12 +13,30 @@
     
     <script src="js/jquery-1.6.4.min.js" type="text/javascript"></script>
     <script src="js/jquery.mobile.min.js" type="text/javascript"></script>
-    <script src="js/swipefix.js" type="text/javascript"></script>
+    <script src="js/iscroll.js" type="text/javascript"></script>
     
     <script src="js/didi.js" type="text/javascript"></script>
-    
+ 
+			<!--iscroll-->    
   
-    <script>
+   <script type="text/javascript">
+
+var scrollContent,
+	scrollNav;
+
+function loaded() {
+	scrollContent = new iScroll('contentWrapper');
+	scrollNav = new iScroll('navWrapper');
+}
+
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+document.addEventListener('DOMContentLoaded', loaded, false);
+
+</script>
+
+<!--iscroll_end-->
+ <script>
         $(document).ready(function() {
             $("#port-image").live('swipeup', function (event, ui) {
                 $.mobile.changePage("editorial.html", { transition: "slideup"});
@@ -155,7 +173,7 @@
 			<!--count1--> 
 			
 			$("#count1").live('swipeup', function (event, ui) {
-                $.mobile.changePage("count2.html", { transition: "slideup"});
+                $.mobile.changePage("count3.html", { transition: "slideup"});
 			});
 			$("#count1").live('swiperight', function (event, ui) {
                 $.mobile.changePage("monuments.html", { transition: "reverse slide"});
