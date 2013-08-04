@@ -17,16 +17,14 @@
  
  .ui-page {
 -webkit-backface-visibility: hidden;
-overflow-y: scroll;
--webkit-overflow-scrolling: touch;
+
 }
 
 
   /* #container div with absolute position and 100% width and height so it takes up whole window */
         #container {
-			-webkit-backface-visibility: hidden;
-			overflow-y: scroll;
--webkit-overflow-scrolling: touch;
+			
+			
            
         }
 
