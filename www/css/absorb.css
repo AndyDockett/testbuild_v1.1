@@ -26,7 +26,8 @@
         }
 
 		#port	{
-
+width:1024px;
+height:764px;
 
 		}
 
@@ -67,3 +68,8 @@ video{
     z-index: 0;
  
 }
+
+.scrollable {
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+        }
