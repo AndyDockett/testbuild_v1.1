@@ -6,6 +6,7 @@
             margin: 0;
 			 width: 1024px;
             height: 768px;
+	
 			
 			
            
@@ -17,12 +18,14 @@
  
  .ui-page {
 -webkit-backface-visibility: hidden;
+		
 
 }
 
 
   /* #container div with absolute position and 100% width and height so it takes up whole window */
         #container {
+		
 			
 			
            
@@ -44,6 +47,9 @@
 		
 			
 			-webkit-backface-visibility: hidden;
+				height: 400px;
+	overflow:scroll;
+	-webkit-overflow-scrolling: touch;
 
 
 				}
@@ -76,9 +82,7 @@ video{
 }
 			
 #outer  {
-	height: 400px;
-	overflow:auto;
-	-webkit-overflow-scrolling: touch;
+	
 }
 
 #port2-nav {
