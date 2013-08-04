@@ -6,6 +6,9 @@
             margin: 0;
 			 width: 1024px;
             height: 768px;
+			 overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+            position: absolute;
 
         }
  
@@ -22,14 +25,11 @@
 			 overflow-y: scroll;
             -webkit-overflow-scrolling: touch;
             position: absolute;
-            width: 1024px;
-            height: 768px;
-			-webkit-backface-visibility: hidden;
+           
         }
 
 		#port	{
-			 overflow-y: scroll;
-            -webkit-overflow-scrolling: touch;
+			
 width:1024px;
 height:764px;
 
@@ -42,9 +42,7 @@ height:764px;
 
 		}
 		#mainpage	{
-			 overflow-y: scroll;
-            -webkit-overflow-scrolling: touch;
-
+			
 
 				}
 
@@ -75,7 +73,4 @@ video{
  
 }
 
-.scrollable {
-            overflow-y: scroll;
-            -webkit-overflow-scrolling: touch;
-        }
+
