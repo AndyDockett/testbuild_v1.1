@@ -76,21 +76,13 @@ video{
 }
 			
 #outer  {
-	height: 100px;
-	overflow:scroll;
+	height: 400px;
+	overflow:auto;
 	-webkit-overflow-scrolling: touch;
-
+}
 
 #port2-nav {
-position: absolute;
-top: 50px;
-left: 0;
-right: 0;
-bottom: 0;
-width:50px;
-height:300px;
-overflow: hidden;
--webkit-overflow-scrolling: touch;
+
 }
 
 				
