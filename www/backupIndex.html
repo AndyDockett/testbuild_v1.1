@@ -35,13 +35,7 @@
 <!--TOUCH NAV-->
  <script>
  
- 		<!--The didi scroll magic-->
-		function scrollToAnchor(aid){
-   				 var aTag = $("a[name='"+ aid +"']");
-   					 $('html,body').animate({scrollTop: aTag.offset().top},'slow');
-				}
-			<!--End magic-->
-			
+ 
         $(document).ready(function() {
             $("#port-image").live('swipeup', function (event, ui) {
                 $.mobile.changePage("editorial.html", { transition: "slideup"});
@@ -181,9 +175,9 @@
 			
 			<!--count1--> 
 			
-			$("#count1").live('swipeup', function () { scrollToAnchor('id2');
+			$("#count1").live('swipeup', function (event, ui) {
+                $.mobile.changePage("count2.html", { transition: "slideup"});
 			});
-			
 			$("#count1").live('swiperight', function (event, ui) {
                 $.mobile.changePage("monuments.html", { transition: "reverse slide"});
 			});
@@ -191,87 +185,26 @@
                 $.mobile.changePage("synge.html", { transition: "slide"});
 			});
 			
-			$("#count2").live('swipedown', function () { scrollToAnchor('id1');
-			});
 			
-			$("#count2").live('swipeup', function () { scrollToAnchor('id3');
-			});
+			<!--count2--> 
 			
-			$("#count2").live('swiperight', function (event, ui) {
-                $.mobile.changePage("monuments.html", { transition: "reverse slide"});
-			});
 			$("#count2").live('swipeleft', function (event, ui) {
                 $.mobile.changePage("synge.html", { transition: "slide"});
 			});
-			
-			$("#count3").live('swipedown', function () { scrollToAnchor('id2');
+			$("#count2").live('swipedown', function (event, ui) {
+                $.mobile.changePage("count.html", { transition: "slidedown"});
 			});
-			
-			$("#count3").live('swipeup', function () { scrollToAnchor('id4');
-			});
-			
-			$("#count3").live('swiperight', function (event, ui) {
+			$("#count2").live('swiperight', function (event, ui) {
                 $.mobile.changePage("monuments.html", { transition: "reverse slide"});
 			});
-			$("#count3").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("synge.html", { transition: "slide"});
-			});
-			
-			$("#count4").live('swipedown', function () { scrollToAnchor('id3');
-			});
-			
-			$("#count4").live('swipeup', function () { scrollToAnchor('id5');
-			});
-			
-			$("#count4").live('swiperight', function (event, ui) {
-                $.mobile.changePage("monuments.html", { transition: "reverse slide"});
-			});
-			$("#count4").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("synge.html", { transition: "slide"});
-			});
 			
 			
-			$("#count5").live('swipedown', function () { scrollToAnchor('id4');
+			function scrollToAnchor(aid){
+   				 var aTag = $("a[name='"+ aid +"']");
+   					 $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+				}
+			$("#count2").live('swipeup', function () { scrollToAnchor('id3');
 			});
-			
-			$("#count5").live('swipeup', function () { scrollToAnchor('id6');
-			});
-			
-			$("#count5").live('swiperight', function (event, ui) {
-                $.mobile.changePage("monuments.html", { transition: "reverse slide"});
-			});
-			$("#count5").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("synge.html", { transition: "slide"});
-			});
-			
-			
-			$("#count6").live('swipedown', function () { scrollToAnchor('id5');
-			});
-			
-			$("#count6").live('swipeup', function () { scrollToAnchor('id7');
-			});
-			
-			$("#count6").live('swiperight', function (event, ui) {
-                $.mobile.changePage("monuments.html", { transition: "reverse slide"});
-			});
-			$("#count6").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("synge.html", { transition: "slide"});
-			});
-			
-				
-			$("#count7").live('swipedown', function () { scrollToAnchor('id6');
-			});
-			
-		
-			
-			$("#count7").live('swiperight', function (event, ui) {
-                $.mobile.changePage("monuments.html", { transition: "reverse slide"});
-			});
-			$("#count7").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("synge.html", { transition: "slide"});
-			});
-			
-			
 			
 			<!--synge--> 
 			
