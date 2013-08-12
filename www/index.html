@@ -1,392 +1,170 @@
-﻿<!doctype html>
-<html>
-<head>
-<meta charset=utf8>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<title>Test</title>
-    <link href="css/jquery.mobile.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/absorb.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="css/stylesheet.css" media="all" />
-    
-    
-    
-    <script src="js/jquery-1.6.4.min.js" type="text/javascript"></script>
-    <script src="js/jquery.mobile.min.js" type="text/javascript"></script>
-   
-    
-    <script src="js/didi.js" type="text/javascript"></script>
- 
-	
-	
-	
-	
-	
-	
-	
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html style="overflow-y: visible;" xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>jQuery NiceScroll Test Page</title>
+<style type="text/css">
+#boxscroll {
+	padding: 5%;
+	height: 300px;
+	width: 90%;
+	border: 2px solid #00F;
+	overflow: auto;
+  margin-bottom:20px;
+}
+#boxscroll2 {
+	padding: 40px;
+	height: 120px;
+	width: 730px;
+	border: 2px solid #F00;
+	overflow: auto;
+}
+#boxscroll3 {
+	overflow: hidden;
+}
+#boxframe {
+	position:absolute;
+	top:28px;
+	left:420px;
+	width:400px;
+	height:300px;
+	overflow:auto;
+	border: 2px solid #0F0;
+}
+#boxscroll4 {
+	height: 300px;
+	margin-top: 40px;
+	background-color: #00FF66;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 18px;
+	padding: 20px;
+	color: #006633;
+	overflow: auto;
+}
+</style>
 
+<script src="js/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
 
+<script>
+  $(document).ready(function() {
+  
+	var nice = $("html").niceScroll();  // The document page (body)
+	
+	$("#div1").html($("#div1").html()+' '+nice.version);
+    
+    $("#boxscroll").niceScroll({touchbehavior:true}); // First scrollable DIV
+    
+    // Customizable cursor
+    // $("#boxscroll").niceScroll({touchbehavior:false,cursorcolor:"#00F",cursoropacitymax:0.7,cursorwidth:11,cursorborder:"1px solid #2848BE",cursorborderradius:"8px"}).cursor.css({"background-image":"url(img/mac6scroll.png)"}); // MAC like scrollbar
 
-
-<!--TOUCH NAV-->
- <script>
- 
- 
-        $(document).ready(function() {
-            $("#port-image").live('swipeup', function (event, ui) {
-                $.mobile.changePage("editorial.html", { transition: "slideup"});
-            });
-            
-            <!--editorial--> 
-			$("#editorial").live('swipedown', function (event, ui) {
-                $.mobile.changePage("index.html", { transition: "slidedown"});
-			});
-			
-			$("#editorial").live('swipeup', function (event, ui) {
-                $.mobile.changePage("instruct.html", { transition: "slideup"});
-			});
-			
-			<!--instruct--> 
-			$("#instruct").live('swipedown', function (event, ui) {
-                $.mobile.changePage("editorial.html", { transition: "slidedown"});
-			});
-			
-			$("#instruct").live('swipeup', function (event, ui) {
-                $.mobile.changePage("monuments.html", { transition: "slideup"});
-			});
-			
-			<!--monuments--> 
-			$("#monuments").live('swiperight', function (event, ui) {
-                $.mobile.changePage("instruct.html", { transition: "reverse slide"});
-			});
-			
-			$("#monuments").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("count.html", { transition: "slide"});
-			});
-			
-			$("#monuments").live('swipeup', function (event, ui) {
-                $.mobile.changePage("monuments1.html", { transition: "slideup"});
-            });
-			
-			<!--monuments1--> 
-			$("#monuments1").live('swipeup', function (event, ui) {
-                $.mobile.changePage("monuments2.html", { transition: "slideup"});
-			});
-			
-			$("#monuments1").live('swipedown', function (event, ui) {
-                $.mobile.changePage("monuments.html", { transition: "slidedown"});
-			});
-			
-			$("#monuments1").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("count.html", { transition: "slide"});
-			});
-			<!--monuments2--> 
-			$("#monuments2").live('swipeup', function (event, ui) {
-                $.mobile.changePage("monuments3.html", { transition: "slideup"});
-			});
-			
-			$("#monuments2").live('swipedown', function (event, ui) {
-                $.mobile.changePage("monuments1.html", { transition: "slidedown"});
-			});
-			$("#monuments2").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("count.html", { transition: "slide"});
-			});
-			
-			<!--monuments3--> 
-			$("#monuments3").live('swipeup', function (event, ui) {
-                $.mobile.changePage("monuments4.html", { transition: "slideup"});
-			});
-			
-			$("#monuments3").live('swipedown', function (event, ui) {
-                $.mobile.changePage("monuments2.html", { transition: "slidedown"});
-			});
-			$("#monuments3").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("count.html", { transition: "slide"});
-			});
-			
-			
-			<!--monuments4--> 
-			$("#monuments4").live('swipeup', function (event, ui) {
-                $.mobile.changePage("monuments5.html", { transition: "slideup"});
-			});
-			
-			$("#monuments4").live('swipedown', function (event, ui) {
-                $.mobile.changePage("monuments3.html", { transition: "slidedown"});
-			});
-			$("#monuments4").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("count.html", { transition: "slide"});
-			});
-			
-			
-			<!--monuments5--> 
-			$("#monuments5").live('swipeup', function (event, ui) {
-                $.mobile.changePage("monuments6.html", { transition: "slideup"});
-			});
-			
-			$("#monuments5").live('swipedown', function (event, ui) {
-                $.mobile.changePage("monuments4.html", { transition: "slidedown"});
-			});
-			$("#monuments5").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("count.html", { transition: "slide"});
-			});
-			
-			<!--monuments6--> 
-			$("#monuments6").live('swipeup', function (event, ui) {
-                $.mobile.changePage("monuments7.html", { transition: "slideup"});
-			});
-			
-			$("#monuments6").live('swipedown', function (event, ui) {
-                $.mobile.changePage("monuments5.html", { transition: "slidedown"});
-			});
-			
-			$("#monuments6").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("count.html", { transition: "slide"});
-			});
-			<!--monuments7--> 
-			$("#monuments7").live('swipeup', function (event, ui) {
-                $.mobile.changePage("monuments8.html", { transition: "slideup"});
-			});
-			
-			$("#monuments7").live('swipedown', function (event, ui) {
-                $.mobile.changePage("monuments6.html", { transition: "slidedown"});
-			});
-			$("#monuments7").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("count.html", { transition: "slide"});
-			});
-			
-			
-			<!--monuments8--> 
-			
-			$("#monuments8").live('swipedown', function (event, ui) {
-                $.mobile.changePage("monuments7.html", { transition: "slidedown"});
-			});
-			$("#monuments8").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("count.html", { transition: "slide"});
-			});
-			
-			
-			
-			
-			
-			
-			<!--count1--> 
-			
-			$("#count1").live('swipeup', function (event, ui) {
-                $.mobile.changePage("count2.html", { transition: "slideup"});
-			});
-			$("#count1").live('swiperight', function (event, ui) {
-                $.mobile.changePage("monuments.html", { transition: "reverse slide"});
-			});
-			$("#count1").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("synge.html", { transition: "slide"});
-			});
-			
-			
-			<!--count2--> 
-			
-			$("#count2").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("synge.html", { transition: "slide"});
-			});
-			$("#count2").live('swipedown', function (event, ui) {
-                $.mobile.changePage("count.html", { transition: "slidedown"});
-			});
-			$("#count2").live('swiperight', function (event, ui) {
-                $.mobile.changePage("monuments.html", { transition: "reverse slide"});
-			});
-			
-			
-			
-			
-			
-			<!--synge--> 
-			
-			$("#synge").live('swipeup', function (event, ui) {
-                $.mobile.changePage("love1.html", { transition: "slideup"});
-			});
-			$("#synge").live('swipedown', function (event, ui) {
-                $.mobile.changePage("count.html", { transition: "slidedown"});
-			});
-			
-			
-			
-			<!--love1--> 
-			
-			$("#love1").live('swipeup', function (event, ui) {
-                $.mobile.changePage("love2.html", { transition: "slideup"});
-			});
-			$("#love1").live('swiperight', function (event, ui) {
-                $.mobile.changePage("synge.html", { transition: "reverse slide"});
-			});
-			$("#love1").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("diagrams1.html", { transition: "slide"});
-			});
-			
-			
-			<!--love2--> 
-			
-			$("#love2").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("diagrams1.html", { transition: "slide"});
-			});
-			$("#love2").live('swiperight', function (event, ui) {
-                $.mobile.changePage("synge.html", { transition: "reverse slide"});
-			});
-			$("#love2").live('swipeup', function (event, ui) {
-                $.mobile.changePage("love1.html", { transition: "reverse slide"});
-			});
-			
-			<!--diagrams1--> 
-			
-			$("#diagrams1").live('swipedown', function (event, ui) {
-                $.mobile.changePage("love1.html", { transition: "slidedown"});
-			});
-			
-			$("#diagrams1").live('swipeup', function (event, ui) {
-                $.mobile.changePage("imagine1.html", { transition: "slideup"});
-			});
-			$("#diagrams1").live('swiperight', function (event, ui) {
-                $.mobile.changePage("diagrams2.html", { transition: "reverse slide"});
-			});
-			
-			<!--diagrams2--> 
-			
-			$("#diagrams2").live('swipedown', function (event, ui) {
-                $.mobile.changePage("love1.html", { transition: "slidedown"});
-			});
-			$("#diagrams2").live('swipeup', function (event, ui) {
-                $.mobile.changePage("imagine1.html", { transition: "slideup"});
-			});
-			
-			$("#diagrams2").live('swiperight', function (event, ui) {
-                $.mobile.changePage("diagrams3.html", { transition: "reverse slide"});
-			});
-			$("#diagrams2").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("diagrams1.html", { transition: "slide"});
-			});
-			
-			
-			<!--diagrams3--> 
-			
-			$("#diagrams3").live('swipedown', function (event, ui) {
-                $.mobile.changePage("love1.html", { transition: "slidedown"});
-			});
-			$("#diagrams3").live('swipeup', function (event, ui) {
-                $.mobile.changePage("imagine1.html", { transition: "slideup"});
-			});
-			
-			$("#diagrams3").live('swiperight', function (event, ui) {
-                $.mobile.changePage("diagrams4.html", { transition: "reverse slide"});
-			});
-			$("#diagrams3").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("diagrams2.html", { transition: "slide"});
-			});
-			
-			<!--diagrams4--> 
-			
-				$("#diagrams4").live('swipedown', function (event, ui) {
-                $.mobile.changePage("love1.html", { transition: "slidedown"});
-			});
-			$("#diagrams4").live('swipeup', function (event, ui) {
-                $.mobile.changePage("imagine1.html", { transition: "slideup"});
-			});
-			
-			$("#diagrams4").live('swiperight', function (event, ui) {
-                $.mobile.changePage("diagrams5.html", { transition: "reverse slide"});
-			});
-			$("#diagrams4").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("diagrams3.html", { transition: "slide"});
-			});
-			
-			
-			<!--diagrams5--> 
-			
-					$("#diagrams5").live('swipedown', function (event, ui) {
-                $.mobile.changePage("love1.html", { transition: "slidedown"});
-			});
-			$("#diagrams5").live('swipeup', function (event, ui) {
-                $.mobile.changePage("imagine1.html", { transition: "slideup"});
-			});
-			
-			
-			$("#diagrams5").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("diagrams4.html", { transition: "slide"});
-			});
-			
-			<!--imagine1--> 
-			
-			$("#imagine1").live('swiperight', function (event, ui) {
-                $.mobile.changePage("diagrams1.html", { transition: "reverse slide"});
-			});
-			
-			$("#imagine1").live('swipeleft',function() {
-alert("No more to see just yet!");
+    $("#boxscroll2").niceScroll("#contentscroll2",{cursorcolor:"#F00",cursoropacitymax:0.7,boxzoom:true,touchbehavior:true});  // Second scrollable DIV
+    $("#boxframe").niceScroll("#boxscroll3",{cursorcolor:"#0F0",cursoropacitymax:0.7,boxzoom:true,touchbehavior:true});  // This is an IFrame (iPad compatible)
+	
+    $("#boxscroll4").niceScroll("#boxscroll4 .wrapper",{boxzoom:true});  // hw acceleration enabled when using wrapper
+    
+/*    
+$("input[type=range]").bind('mousedown touchstart', function (e) {
+    e.stopPropagation();
 });
-			
-        }); 
-    </script>
+*/
+
+  });
+</script>
+
+<meta name="viewport" content="user-scalable=no">
+
 </head>
 
 <body>
-<div id="container">
-  <div data-role="page" class="main" id="mainpage">
-    		<div id="port">
-		
-		
-			<video width='1000' height='562' autoplay loop mute style='background:rgb(246,246,246);'>
-				<source src='Fischer_1.mov'>
-			</video>
+
+<div id="div1"><strong>NiceScroll version:</strong> </div>
+
+<div tabindex="5000" style="overflow-y: auto;" id="boxscroll">
+THIS IS A SIMPLE SCROLLABLE DIV
+  <h2> Package Description </h2>
+  <div><input name="q51" style="width: 300px;" min="2" max="100" step="1" title="Range: 2 to 100 in steps of 1" value="0" type="range"></div>
+  <p>Release Date: August 10, 2010</p>
+  <p>The <a title="http://www.openprinting.org/show_driver.cgi?driver=hpijs" rel="nofollow" href="http://www.openprinting.org/show_driver.cgi?driver=hpijs">HPIJS</a> driver is the free, <a title="http://hplipopensource.com/hplip-web/index.html" rel="nofollow" href="http://hplipopensource.com/hplip-web/index.html">open-source driver</a> issued by HP for their DeskJet and LaserJet printers. For most <a title="" href="http://www.linuxfoundation.org/collaborate/workgroups/openprinting/macosx/hpijs#Printers">supported printers</a>,
+   this driver produces output quality equivalent to the proprietary HP 
+  drivers. In photo mode, with photo paper, the output quality is very  
+ high, especially for the HP DeskJet 990C and later models, which   
+auto-detect the paper type in hardware. Photo printing is fully   
+supported in the newer 6- and 7-ink models.</p>
+  <p>A major advantage of using this driver over those supplied by HP is
+   the direct interface between HPIJS and the native CUPS spooler, which
+   allows printing from any printer over any available connection such 
+as   USB, AppleTalk, TCP/IP (via LPD and IPP), HP JetDirect, and shared 
+  windows printers via SAMBA. Additionally, this driver utilizes the   
+existing Mac OS X USB "backend" and thus does not install any software  
+ that might interfere with standard USB operation.</p>
+  <p>Please note:</p>
+  <ul>
+    <li>HP does not provide any support for HPLIP or HPIJS on the Mac OS X platform.</li>
+    <li><a href="http://www.linuxfoundation.org/en/OpenPrinting/MacOSX/hpijs-USB">Several HP USB devices</a> may not print successfully over the standard Mac OS X USB "backend". Please <a href="http://www.linuxfoundation.org/en/OpenPrinting/MacOSX/hpijs-USB">see this note</a> for more information.</li>
+  </ul>
+  <h2>Release Notes</h2>
+  <ul>
+    <li>This release fixes a problem with the PPDs that caused many job 
+  options such as page orientation, color/grayscale mode, duplex 
+printing,   etc. to fail.</li>
+    <li>HPIJS is HP's universal printer driver for most of their   
+non-PostScript printers. It comes as a part of HPLIP, HP Linux Imaging  
+ and Printing.</li>
+    <li>The PPDs for HP printers are now sourced from the HPLIP package rather than the OpenPrinting.org database.</li>
+    <li>PPDs for printers from other manufacturers are provided by OpenPrinting.org.</li>
+    <li>Some printers are only partially supported.  Printers such as<br>
+      HP LaserJet 1022<br>
+      HP LaserJet p1505n<br>
+      HP LaserJet p12014<br>
+      HP LaserJet p2035<br>
+      require a proprietary plug-in for full support.  This package does not contain or support such plug-ins.</li>
+  </ul>
+  <p><a name="Printer_Set_Up_Instructions" id="Printer_Set_Up_Instructions"></a></p>
+  <h2> Printer Set Up Instructions </h2>
+  <p>To add a printer queue, Leopard (Mac OS X 10.5.x) users should use 
+  the Print &amp; Fax from System Preferences. Click on the + (plus) 
+icon   at the lower left. A new window will open. In that window, click 
+the   Default Browser icon at the top left. Highlight your printer in 
+the   section below. Use the "Print Using" pop-up menu near the bottom 
+of the   window to select the correct PPD for your printer and click 
+Add.</p>
+  <p>Tiger users should open the Printer Setup Utility and click on the 
+  Add icon at the top of the Printer List window. A new window will 
+open.   In that window, click the Default Browser icon at the top left. 
+  Highlight your printer in the section below. Use the "Print Using"   
+pop-up menu near the bottom of the window to select the correct PPD for 
+  your printer and click Add.</p>
+  <p>Jaguar (OS X 10.2.x) and Panther (OS X 10.3.x) users should open   
+Print Center (Jaguar) or Printer Setup Utility (Panther), hold down the 
+  Option key, and click the Add Printer button in the Print Center   
+toolbar. Within the setup sheet, choose Advanced from the top popup   
+menu; then in the "Device:" popup menu select your printer by name (it  
+ should be the last item in the menu list). Finally, select the correct 
+  PPD from the model browser and click Add.</p>
+  <div id="count1"><a name="id1"/></a><img src="img/page4/count1.jpg" width="1024" height="768">
+       </div> 
             
-            <div id="port-image">		
-			<img src="img/page1/absorb_port.png" style='width:1024px; height:768px; position:absolute;
-    top: 0px; right: 0px; z-index:2'>
-			</div>
-    
-    	
-    
-    	</div>
-   </div>
+            
+        <div id="count2"><a name="id2"/></a><img src="img/page4/count2_1.jpg" width="1024" height="768">
+        </div>
+         
+         
+         <div id="count3"><a name="id3"/></a><img src="img/page4/count2_2.jpg" width="1024" height="768">
+        </div>
+        
+         <div id="count4"><a name="id4"/></a><img src="img/page4/count2_32.jpg" width="1024" height="768">
+        </div>
+        
+        <div id="count5"><a name="id5"/></a><img src="img/page4/count2_4.jpg" width="1024" height="768">
+        </div>
+        
+        <div id="count6"><a name="id6"/></a><img src="img/page4/count2_5.jpg" width="1024" height="768">
+        </div>
+        
+        <div id="count7"><a name="id7"/></a><img src="img/page4/count2_6.jpg" width="1024" height="464">
+        </div>
 </div>
-<!--<script type="text/javascript">
-
-$("body").live('swipeup',function() {
-alert("swiped up");
-});
-
-$("body").live('swipedown',function() {
-alert("swiped down");
-});
-
-$("body").live('swipeleft',function() {
-alert("swiped left");
-});
-
-$("body").live('swiperight',function() {
-alert("swiped right");
-});
-
-$("body").live('tap',function() {
-alert("tapped it");
-});
-
-$("body").on('taphold',function() {
-alert("youheldit");
-});
 
 
-</script>-->
 
-
-<script type="text/javascript">
- $(function(){
-	$("video").load();
-	setTimeout(function(){
-		$("video").trigger("click").play();
-	},1000);
-});
-/*$("video").live("touchstart",function(){
-	var i = setInterval(function(){
-		$("video").currentTime = 0;
-	},7000);
-});*/
-</script>
-</body>
-</html>
+</body></html>
