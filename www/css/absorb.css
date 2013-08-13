@@ -33,6 +33,7 @@
             width: 100%;
             height: 100%;
 			
+			
            
         }
 
@@ -95,11 +96,25 @@ video{
 
 }
 
-#count1-nav {
+#count_nav {
 	-webkit-backface-visibility: hidden;
-	height:7000px;
-	position:absolute
-	
-	
+	height:200px;
+	position:absolute;
+	overflow:hidden;
+	overflow-y: scroll; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
+  border:dashed;
 
+}
 
+#count_nav2 {
+	-webkit-backface-visibility: hidden;
+	height:200px;
+	position:absolute;
+	overflow:hidden;
+	overflow-y: scroll; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
+  border:dashed;
+  background-color:#093;
+
+}
