@@ -40,6 +40,8 @@
 		#port	{
 			
 -webkit-backface-visibility: hidden;
+height:768px;
+overflow:hidden;
 
 		}
 
@@ -109,7 +111,7 @@ video{
 
 #count_nav2 {
 	-webkit-backface-visibility: hidden;
-	height:200px;
+	height:768px;
 	position:absolute;
 	overflow:hidden;
 	overflow-y: scroll; /* has to be scroll, not auto */
