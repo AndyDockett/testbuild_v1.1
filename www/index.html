@@ -320,11 +320,254 @@
                 $.mobile.changePage("diagrams1.html", { transition: "reverse slide"});
 			});
 			
-			$("#imagine1").live('swipeleft',function() {
-alert("No more to see just yet!");
-});
+				
+			$("#imagine1").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("know1.html", { transition: "slide"});
+			});
 			
+			
+			<!--Know1--> 
+			
+			
+			
+			$("#know1").live('swiperight', function (event, ui) {
+                $.mobile.changePage("imagine1.html", { transition: "reverse slide"});
+			});
+			
+				
+			$("#know1").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("mort1.html", { transition: "slide"});
+			});
+			
+			<!--Mort1--> 
+			
+			
+			$("#mort1").live('swipedown', function (event, ui) {
+                $.mobile.changePage("know1.html", { transition: "slidedown"});
+			});
+			
+			$("#mort1").live('swipeup', function (event, ui) {
+                $.mobile.changePage("noise1.html", { transition: "slideup"});
+			});
+			$("#mort1").live('swiperight', function (event, ui) {
+                $.mobile.changePage("mort2.html", { transition: "reverse slide"});
+			});
+			
+			
+			<!--Mort2-->
+			
+			$("#mort2").live('swipedown', function (event, ui) {
+                $.mobile.changePage("know1.html", { transition: "slidedown"});
+			});
+			
+			$("#mort2").live('swipeup', function (event, ui) {
+                $.mobile.changePage("noise1.html", { transition: "slideup"});
+			});
+			$("#mort2").live('swiperight', function (event, ui) {
+                $.mobile.changePage("mort3.html", { transition: "reverse slide"});
+			});
+			$("#mort2").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("mort1.html", { transition: "slide"});
+			});
+			
+			
+			
+			<!--Mort3-->
+			
+			$("#mort3").live('swipedown', function (event, ui) {
+                $.mobile.changePage("know1.html", { transition: "slidedown"});
+			});
+			
+			$("#mort3").live('swipeup', function (event, ui) {
+                $.mobile.changePage("noise1.html", { transition: "slideup"});
+			});
+			$("#mort3").live('swiperight', function (event, ui) {
+                $.mobile.changePage("mort4.html", { transition: "reverse slide"});
+			});
+			$("#mort3").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("mort2.html", { transition: "slide"});
+			});
+			
+				<!--Mort4-->
+			
+			$("#mort4").live('swipedown', function (event, ui) {
+                $.mobile.changePage("know1.html", { transition: "slidedown"});
+			});
+			
+			$("#mort4").live('swipeup', function (event, ui) {
+                $.mobile.changePage("noise1.html", { transition: "slideup"});
+			});
+			$("#mort4").live('swiperight', function (event, ui) {
+                $.mobile.changePage("mort5.html", { transition: "reverse slide"});
+			});
+			$("#mort4").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("mort3.html", { transition: "slide"});
+			});
+			
+			
+			<!--Mort5-->
+			
+			$("#mort5").live('swipedown', function (event, ui) {
+                $.mobile.changePage("know1.html", { transition: "slidedown"});
+			});
+			
+			$("#mort5").live('swipeup', function (event, ui) {
+                $.mobile.changePage("noise1.html", { transition: "slideup"});
+			});
+			$("#mort5").live('swiperight', function (event, ui) {
+                $.mobile.changePage("mort6.html", { transition: "reverse slide"});
+			});
+			$("#mort5").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("mort4.html", { transition: "slide"});
+			});
+			
+			
+			<!--Mort6-->
+			
+			$("#mort6").live('swipedown', function (event, ui) {
+                $.mobile.changePage("know1.html", { transition: "slidedown"});
+			});
+			
+			$("#mort6").live('swipeup', function (event, ui) {
+                $.mobile.changePage("noise1.html", { transition: "slideup"});
+			});
+			$("#mort6").live('swiperight', function (event, ui) {
+                $.mobile.changePage("mort7.html", { transition: "reverse slide"});
+			});
+			$("#mort6").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("mort5.html", { transition: "slide"});
+			});
+			
+			<!--Mort7-->
+			
+			$("#mort7").live('swipedown', function (event, ui) {
+                $.mobile.changePage("know1.html", { transition: "slidedown"});
+			});
+			
+			$("#mort7").live('swipeup', function (event, ui) {
+                $.mobile.changePage("noise1.html", { transition: "slideup"});
+			});
+			
+			$("#mort7").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("mort6.html", { transition: "slide"});
+			});
         
+		
+		<!--Noise1-->
+			
+			$("#noise1").live('swipeup', function (event, ui) {
+                $.mobile.changePage("noise2.html", { transition: "slideup"});
+			});
+			$("#noise1").live('swiperight', function (event, ui) {
+                $.mobile.changePage("mort1.html", { transition: "reverse slide"});
+			});
+			$("#noise1").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("record1.html", { transition: "slide"});
+			});
+			
+			
+			<!--Noise2-->
+			
+			$("#noise2").live('swipeup', function (event, ui) {
+                $.mobile.changePage("noise3.html", { transition: "slideup"});
+			});
+			
+			$("#noise2").live('swipedown', function (event, ui) {
+                $.mobile.changePage("noise1.html", { transition: "slidedown"});
+			});
+			
+			$("#noise2").live('swiperight', function (event, ui) {
+                $.mobile.changePage("mort1.html", { transition: "reverse slide"});
+			});
+			$("#noise2").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("record1.html", { transition: "slide"});
+			});
+			
+			
+			<!--Noise3-->
+			
+			$("#noise3").live('swipeup', function (event, ui) {
+                $.mobile.changePage("noise4.html", { transition: "slideup"});
+			});
+			
+			$("#noise3").live('swipedown', function (event, ui) {
+                $.mobile.changePage("noise2.html", { transition: "slidedown"});
+			});
+			
+			$("#noise3").live('swiperight', function (event, ui) {
+                $.mobile.changePage("mort1.html", { transition: "reverse slide"});
+			});
+			$("#noise3").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("record1.html", { transition: "slide"});
+			});
+			
+			
+			<!--Noise4-->
+			
+			
+			
+			$("#noise4").live('swipedown', function (event, ui) {
+                $.mobile.changePage("noise3.html", { transition: "slidedown"});
+			});
+			
+			$("#noise4").live('swiperight', function (event, ui) {
+                $.mobile.changePage("mort1.html", { transition: "reverse slide"});
+			});
+			$("#noise4").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("record1.html", { transition: "slide"});
+			});
+			
+			
+			
+			<!--record1-->
+			
+			
+			
+			
+			$("#record1").live('swiperight', function (event, ui) {
+                $.mobile.changePage("noise1.html", { transition: "reverse slide"});
+			});
+			$("#record1").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("zoom1.html", { transition: "slide"});
+			});
+			
+			
+			
+			<!--zoom1-->
+			
+			
+			
+			
+			$("#zoom1").live('swiperight', function (event, ui) {
+                $.mobile.changePage("record1.html", { transition: "reverse slide"});
+			});
+			$("#zoom1").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("disco1.html", { transition: "slide"});
+			});
+			
+			
+			<!--disco1-->
+	
+			
+			$("#disco1").live('swiperight', function (event, ui) {
+                $.mobile.changePage("zoom1.html", { transition: "reverse slide"});
+			});
+			$("#disco1").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("credits1.html", { transition: "slide"});
+			});
+			
+			<!--credits1-->
+	
+			
+			$("#credits1").live('swiperight', function (event, ui) {
+                $.mobile.changePage("disco1.html", { transition: "reverse slide"});
+			});
+			
+			
+			
+			
+			
+			
     </script>
 </head>
 
