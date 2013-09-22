@@ -158,10 +158,7 @@ video{
 
 #vertical {
 	-webkit-transform:rotate(90deg);
-	-webkit-transform-origin-y: 50%;
-	-webkit-transform-origin-x: 50%;
-   position: absolute;
-   width: 768px;
+	width: 768px;
    height: 1028px;
    border: 1px solid red;
 	
