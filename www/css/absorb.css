@@ -141,3 +141,25 @@ video{
 #love1 {
 	background-color:#fff;
 }
+@font-face {
+	font-family: Roboto;
+	src: url('../ttf-fonts/Roboto-Regular.ttf') format('truetype');
+ 	font-weight: 400;
+	font-style: normal; 
+}
+
+
+#section-head {
+	font-family: theinhardt, Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	text-align: center;
+}
+
+#vertical {
+	-webkit-transform:rotate(90deg);
+	-webkit-transform-origin-y: 0;
+	-webkit-transform-origin-x: 384px;
+   position: relative;
+	
+}
+	
