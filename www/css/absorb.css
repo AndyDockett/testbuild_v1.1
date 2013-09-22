@@ -161,6 +161,8 @@ video{
 	width: 768px;
    height: 1028px;
    border: 1px solid red;
+   margin-left: 130px;
+margin-top: -130px;
 	
 }
 	
