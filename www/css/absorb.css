@@ -180,7 +180,7 @@ font-family: Alegreya;
 	margin-left: 147px;
 	width: 105px;
 	float:left;
-	letter-spacing: 1px;
+	letter-spacing: 3px;
 	
 	}
 	
@@ -189,20 +189,11 @@ font-family: Alegreya;
 	font-size: 12px;
 	margin-top: 24px;
 	margin-left: 393px;
-	letter-spacing: 1px;
+	letter-spacing: 3px;
 	
 	
 	}
 	
-#title-credits {
-font-family: Alegreya;
-	font-size: 12px;
-	margin-top: 24px;
-	margin-left: 393px;
-	letter-spacing: 1px;
-	
-	
-	}
 	
 #vertical-image {
 	width:600px;
