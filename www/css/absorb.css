@@ -193,3 +193,27 @@ font-family: Alegreya;
 	
 	
 	}
+	
+#title-credits {
+font-family: Alegreya;
+	font-size: 12px;
+	margin-top: 24px;
+	margin-left: 393px;
+	letter-spacing: 1px;
+	
+	
+	}
+	
+#vertical-image {
+	width:600px;
+	margin-top: 34px;
+	margin-left: 84px;
+}
+
+#vertical-image-title {
+	width:600px;
+	margin-top: 10px;
+	margin-left: 84px;
+	font-family: open sans;
+	font-size: 16px;
+}
