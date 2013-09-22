@@ -142,15 +142,15 @@ video{
 	background-color:#fff;
 }
 @font-face {
-	font-family: Roboto;
-	src: url('../ttf-fonts/Roboto-Regular.ttf') format('truetype');
+	font-family: Open Sans;
+	src: url('../ttf-fonts/opensansboldit-webfont.ttf') format('truetype');
  	font-weight: 400;
 	font-style: normal; 
 }
 
 
 #section-head {
-	font-family: theinhardt, Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-family: open sans;
 	font-size: 16px;
 	text-align: center;
 	margin-top: 494px
