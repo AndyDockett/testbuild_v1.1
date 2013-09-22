@@ -147,7 +147,12 @@ video{
  	font-weight: 400;
 	font-style: normal; 
 }
-
+@font-face {
+	font-family: Alegreya;
+	src: url('../ttf-fonts/alegreyablo-webfont.ttf') format('truetype');
+ 	font-weight: 400;
+	font-style: normal; 
+}
 
 #section-head {
 	font-family: open sans;
@@ -167,4 +172,9 @@ margin-bottom: -130px;
 
 	
 }
+
+#category-head {
+font-family: Alegreya;
+	font-size: 16px;
 	
+	}
