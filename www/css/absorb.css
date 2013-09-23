@@ -224,7 +224,7 @@ font-family: Alegreya;
 	#category-head-v {
 font-family: Alegreya;
 	font-size: 12px;
-	margin-top: 28px;
+	
 	margin-left: 190px;
 	width: 105px;
 	float:left;
@@ -275,4 +275,9 @@ font-family: Alegreya;
 }
 .what {
 	color: rgb(255, 93, 0);
+}
+
+#vidholder {
+	margin-left:74px;
+	margin-top: 50px;
 }
