@@ -281,3 +281,8 @@ font-family: Alegreya;
 	margin-left:74px;
 	margin-top: 50px;
 }
+
+#normal {
+	  -webkit-transform:rotate(0deg);
+  -webkit-transform-origin:0px 0px;
+  z-index: 0;
