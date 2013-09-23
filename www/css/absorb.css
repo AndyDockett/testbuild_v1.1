@@ -117,7 +117,7 @@ video{
 	overflow-y: scroll; /* has to be scroll, not auto */
   -webkit-overflow-scrolling: touch;
   border:dashed;
-  background-color:#093;
+  background-color:#fff;
 
 }
 #imagine1 {
@@ -204,6 +204,7 @@ video{
    margin-left: 130px;
 margin-top: -130px;
 margin-bottom: -130px;
+background-color:#FFF;
 
 	
 }
