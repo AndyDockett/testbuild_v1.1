@@ -221,6 +221,19 @@ font-family: Alegreya;
 	
 	}
 	
+	#category-head-v {
+font-family: Alegreya;
+	font-size: 12px;
+	margin-top: 28px;
+	margin-left: 190px;
+	width: 105px;
+	float:left;
+	letter-spacing: 1px;
+	color:#000;
+	
+	
+	}
+	
 #title-credits {
 font-family: Alegreya;
 	font-size: 12px;
@@ -228,6 +241,18 @@ font-family: Alegreya;
 	margin-left: 393px;
 	letter-spacing: 1px;
 	color:#000;
+	
+	
+	}
+	
+	#title-credits-v {
+font-family: Alegreya;
+	font-size: 12px;
+	margin-top: 28px;
+	margin-left: 688px;
+	letter-spacing: 1px;
+	color:#000;
+	
 	
 	
 	}
@@ -246,4 +271,8 @@ font-family: Alegreya;
 	font-family: Open Sans Reg;
 	font-size: 16px;
 	color:#000;
+	
+}
+.what {
+	color: rgb(255, 93, 0);
 }
