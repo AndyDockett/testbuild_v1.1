@@ -205,7 +205,7 @@ video{
 margin-top: -130px;
 margin-bottom: -130px;
 background-color:#FFF;
-
+color:#000;
 	
 }
 
@@ -217,6 +217,7 @@ font-family: Alegreya;
 	width: 105px;
 	float:left;
 	letter-spacing: 1px;
+	color:#000;
 	
 	}
 	
@@ -226,6 +227,7 @@ font-family: Alegreya;
 	margin-top: 28px;
 	margin-left: 393px;
 	letter-spacing: 1px;
+	color:#000;
 	
 	
 	}
@@ -243,4 +245,5 @@ font-family: Alegreya;
 	margin-left: 84px;
 	font-family: Open Sans Reg;
 	font-size: 16px;
+	color:#000;
 }
