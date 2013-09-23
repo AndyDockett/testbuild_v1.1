@@ -200,7 +200,7 @@ video{
 	-webkit-transform:rotate(90deg);
 	width: 768px;
    height: 1028px;
-   border: 1px solid red;
+   
    margin-left: 130px;
 margin-top: -130px;
 margin-bottom: -130px;
@@ -278,11 +278,17 @@ font-family: Alegreya;
 }
 
 #vidholder {
-	margin-left:74px;
-	margin-top: 148px;
+	margin-left:68px;
+	margin-top: 100px;
 }
 
 #normal {
 -webkit-transform:rotate(0deg);
   -webkit-transform-origin:0px 0px;
   z-index: 0;
+}
+
+#count1 {
+	background-color:#FFF;
+}
+  
