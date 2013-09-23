@@ -154,6 +154,30 @@ video{
  	font-weight: 400;
 	font-style: normal; 
 }
+
+@font-face {
+	font-family: Open Sans Bold;
+	src: url('../ttf-fonts/opensansbold-webfont.ttf') format('truetype');
+ 	font-weight: 400;
+	font-style: normal; 
+}
+
+@font-face {
+	font-family: Open Sans Medium;
+	src: url('../ttf-fonts/opensansmed-webfont.ttf') format('truetype');
+ 	font-weight: 400;
+	font-style: normal; 
+}
+
+@font-face {
+	font-family: Open Sans Medium Italic;
+	src: url('../ttf-fonts/opensansmedit-webfont.ttf') format('truetype');
+ 	font-weight: 400;
+	font-style: normal; 
+}
+
+
+
 @font-face {
 	font-family: Alegreya;
 	src: url('../ttf-fonts/alegreyablo-webfont.ttf') format('truetype');
@@ -162,10 +186,14 @@ video{
 }
 
 #section-head {
-	font-family: open sans;
+	font-family: open sans medium italic;
 	font-size: 16px;
 	text-align: center;
 	margin-top: 370px
+}
+
+.second-line {
+	font-family: open sans medium;
 }
 
 #vertical {
