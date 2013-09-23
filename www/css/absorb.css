@@ -279,10 +279,10 @@ font-family: Alegreya;
 
 #vidholder {
 	margin-left:74px;
-	margin-top: 50px;
+	margin-top: 148px;
 }
 
 #normal {
-	  -webkit-transform:rotate(0deg);
+-webkit-transform:rotate(0deg);
   -webkit-transform-origin:0px 0px;
   z-index: 0;
