@@ -77,7 +77,7 @@ article.split3{width:100%;padding:0 0 0 25px;margin-top:150px;clear:left;}
 	article.split3 h6 em{font-size:25px;font-style: italic;}
 	article.split3 p{font-size:35px;line-height:43px;margin:0 0 30px;}
 
-.videos{position:fixed;top:220px;left:0;z-index: 0;right:0;}
+.videos{position:fixed;top:110px;left:0;z-index: 0;right:0;}
 	video{z-index:1;}
 	video.right{float:right;}
 
