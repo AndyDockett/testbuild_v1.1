@@ -1,0 +1,630 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset=utf8>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Test</title>
+    <link href="css/jquery.mobile.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/absorb.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/stylesheet.css" media="all" />
+    
+ 
+    
+    
+  
+    
+    <script src="js/jquery-1.6.4.min.js" type="text/javascript"></script>
+    <script src="js/jquery.mobile.min.js" type="text/javascript"></script>
+   
+    
+    <script src="js/didi.js" type="text/javascript"></script>
+ 
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+<!--TOUCH NAV-->
+ <script>
+ 
+ 
+        $(document).ready(function() {
+            $("#port-image").live('swipeup', function (event, ui) {
+                $.mobile.changePage("editorial.html", { transition: "slideup"});
+            });
+            
+            <!--editorial--> 
+			$("#editorial").live('swipedown', function (event, ui) {
+                $.mobile.changePage("index.html", { transition: "slidedown"});
+			});
+			
+			$("#editorial").live('swipeup', function (event, ui) {
+                $.mobile.changePage("instruct.html", { transition: "slideup"});
+			});
+			
+			<!--instruct--> 
+			$("#instruct").live('swipedown', function (event, ui) {
+                $.mobile.changePage("editorial.html", { transition: "slidedown"});
+			});
+			
+			$("#instruct").live('swipeup', function (event, ui) {
+                $.mobile.changePage("monuments.html", { transition: "slideup"});
+			});
+			
+			<!--monuments--> 
+			$("#monuments").live('swiperight', function (event, ui) {
+                $.mobile.changePage("instruct.html", { transition: "reverse slide"});
+			});
+			
+			$("#monuments").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("count.html", { transition: "slide"});
+			});
+			
+			$("#monuments").live('swipeup', function (event, ui) {
+                $.mobile.changePage("monuments1.html", { transition: "slideup"});
+            });
+			
+			<!--monuments1--> 
+			$("#monuments1").live('swipeup', function (event, ui) {
+                $.mobile.changePage("monuments2.html", { transition: "slideup"});
+			});
+			
+			$("#monuments1").live('swipedown', function (event, ui) {
+                $.mobile.changePage("monuments.html", { transition: "slidedown"});
+			});
+			
+			$("#monuments1").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("count.html", { transition: "slide"});
+			});
+			<!--monuments2--> 
+			$("#monuments2").live('swipeup', function (event, ui) {
+                $.mobile.changePage("monuments3.html", { transition: "slideup"});
+			});
+			
+			$("#monuments2").live('swipedown', function (event, ui) {
+                $.mobile.changePage("monuments1.html", { transition: "slidedown"});
+			});
+			$("#monuments2").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("count.html", { transition: "slide"});
+			});
+			
+			<!--monuments3--> 
+			$("#monuments3").live('swipeup', function (event, ui) {
+                $.mobile.changePage("monuments4.html", { transition: "slideup"});
+			});
+			
+			$("#monuments3").live('swipedown', function (event, ui) {
+                $.mobile.changePage("monuments2.html", { transition: "slidedown"});
+			});
+			$("#monuments3").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("count.html", { transition: "slide"});
+			});
+			
+			
+			<!--monuments4--> 
+			$("#monuments4").live('swipeup', function (event, ui) {
+                $.mobile.changePage("monuments5.html", { transition: "slideup"});
+			});
+			
+			$("#monuments4").live('swipedown', function (event, ui) {
+                $.mobile.changePage("monuments3.html", { transition: "slidedown"});
+			});
+			$("#monuments4").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("count.html", { transition: "slide"});
+			});
+			
+			
+			<!--monuments5--> 
+			$("#monuments5").live('swipeup', function (event, ui) {
+                $.mobile.changePage("monuments6.html", { transition: "slideup"});
+			});
+			
+			$("#monuments5").live('swipedown', function (event, ui) {
+                $.mobile.changePage("monuments4.html", { transition: "slidedown"});
+			});
+			$("#monuments5").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("count.html", { transition: "slide"});
+			});
+			
+			<!--monuments6--> 
+			$("#monuments6").live('swipeup', function (event, ui) {
+                $.mobile.changePage("monuments7.html", { transition: "slideup"});
+			});
+			
+			$("#monuments6").live('swipedown', function (event, ui) {
+                $.mobile.changePage("monuments5.html", { transition: "slidedown"});
+			});
+			
+			$("#monuments6").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("count.html", { transition: "slide"});
+			});
+			<!--monuments7--> 
+			$("#monuments7").live('swipeup', function (event, ui) {
+                $.mobile.changePage("monuments8.html", { transition: "slideup"});
+			});
+			
+			$("#monuments7").live('swipedown', function (event, ui) {
+                $.mobile.changePage("monuments6.html", { transition: "slidedown"});
+			});
+			$("#monuments7").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("count.html", { transition: "slide"});
+			});
+			
+			
+			<!--monuments8--> 
+			
+			$("#monuments8").live('swipedown', function (event, ui) {
+                $.mobile.changePage("monuments7.html", { transition: "slidedown"});
+			});
+			$("#monuments8").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("count.html", { transition: "slide"});
+			});
+			
+			
+			
+			
+			
+			
+			<!--count1--> 
+			
+			//  $("#count1").live('swipeup', function (event, ui) {
+             // $.mobile.changePage("count2.html", { transition: "slideup"});
+			});
+			$("#count1").live('swiperight', function (event, ui) {
+                $.mobile.changePage("monuments.html", { transition: "reverse slide"});
+			});
+			$("#count1").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("synge.html", { transition: "slide"});
+			});
+			
+			
+			<!--count2--> 
+			
+			$("#count2").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("synge.html", { transition: "slide"});
+			});
+			$("#count2").live('swipedown', function (event, ui) {
+                $.mobile.changePage("count.html", { transition: "slidedown"});
+			});
+			$("#count2").live('swiperight', function (event, ui) {
+                $.mobile.changePage("monuments.html", { transition: "reverse slide"});
+			});
+			
+			
+			
+			
+			
+			<!--synge--> 
+			
+			$("#synge").live('swipeup', function (event, ui) {
+                $.mobile.changePage("love1.html", { transition: "slideup"});
+			});
+			$("#synge").live('swipedown', function (event, ui) {
+                $.mobile.changePage("count.html", { transition: "slidedown"});
+			});
+			
+			
+			
+			<!--love1--> 
+			
+			
+			$("#love1").live('swiperight', function (event, ui) {
+                $.mobile.changePage("synge.html", { transition: "reverse slide"});
+			});
+			$("#love1").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("diagrams1.html", { transition: "slide"});
+			});
+			
+			
+			
+			
+			
+			<!--diagrams1--> 
+			
+			$("#diagrams1").live('swipedown', function (event, ui) {
+                $.mobile.changePage("love1.html", { transition: "slidedown"});
+			});
+			
+			$("#diagrams1").live('swipeup', function (event, ui) {
+                $.mobile.changePage("imagine1.html", { transition: "slideup"});
+			});
+			$("#diagrams1").live('swiperight', function (event, ui) {
+                $.mobile.changePage("diagrams2.html", { transition: "reverse slide"});
+			});
+			
+			<!--diagrams2--> 
+			
+			$("#diagrams2").live('swipedown', function (event, ui) {
+                $.mobile.changePage("love1.html", { transition: "slidedown"});
+			});
+			$("#diagrams2").live('swipeup', function (event, ui) {
+                $.mobile.changePage("imagine1.html", { transition: "slideup"});
+			});
+			
+			$("#diagrams2").live('swiperight', function (event, ui) {
+                $.mobile.changePage("diagrams3.html", { transition: "reverse slide"});
+			});
+			$("#diagrams2").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("diagrams1.html", { transition: "slide"});
+			});
+			
+			
+			<!--diagrams3--> 
+			
+			$("#diagrams3").live('swipedown', function (event, ui) {
+                $.mobile.changePage("love1.html", { transition: "slidedown"});
+			});
+			$("#diagrams3").live('swipeup', function (event, ui) {
+                $.mobile.changePage("imagine1.html", { transition: "slideup"});
+			});
+			
+			$("#diagrams3").live('swiperight', function (event, ui) {
+                $.mobile.changePage("diagrams4.html", { transition: "reverse slide"});
+			});
+			$("#diagrams3").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("diagrams2.html", { transition: "slide"});
+			});
+			
+			<!--diagrams4--> 
+			
+				$("#diagrams4").live('swipedown', function (event, ui) {
+                $.mobile.changePage("love1.html", { transition: "slidedown"});
+			});
+			$("#diagrams4").live('swipeup', function (event, ui) {
+                $.mobile.changePage("imagine1.html", { transition: "slideup"});
+			});
+			
+			$("#diagrams4").live('swiperight', function (event, ui) {
+                $.mobile.changePage("diagrams5.html", { transition: "reverse slide"});
+			});
+			$("#diagrams4").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("diagrams3.html", { transition: "slide"});
+			});
+			
+			
+			<!--diagrams5--> 
+			
+					$("#diagrams5").live('swipedown', function (event, ui) {
+                $.mobile.changePage("love1.html", { transition: "slidedown"});
+			});
+			$("#diagrams5").live('swipeup', function (event, ui) {
+                $.mobile.changePage("imagine1.html", { transition: "slideup"});
+			});
+			
+			
+			$("#diagrams5").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("diagrams4.html", { transition: "slide"});
+			});
+			
+			<!--imagine1--> 
+			
+			$("#imagine1").live('swiperight', function (event, ui) {
+                $.mobile.changePage("diagrams1.html", { transition: "reverse slide"});
+			});
+			
+				
+			$("#imagine1").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("know1.html", { transition: "slide"});
+			});
+			
+			
+			<!--Know1--> 
+			
+			
+			
+			$("#know1").live('swiperight', function (event, ui) {
+                $.mobile.changePage("imagine1.html", { transition: "reverse slide"});
+			});
+			
+				
+			$("#know1").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("mort1.html", { transition: "slide"});
+			});
+			
+			<!--Mort1--> 
+			
+			
+			$("#mort1").live('swipedown', function (event, ui) {
+                $.mobile.changePage("know1.html", { transition: "slidedown"});
+			});
+			
+			$("#mort1").live('swipeup', function (event, ui) {
+                $.mobile.changePage("noise1.html", { transition: "slideup"});
+			});
+			$("#mort1").live('swiperight', function (event, ui) {
+                $.mobile.changePage("mort2.html", { transition: "reverse slide"});
+			});
+			
+			
+			<!--Mort2-->
+			
+			$("#mort2").live('swipedown', function (event, ui) {
+                $.mobile.changePage("know1.html", { transition: "slidedown"});
+			});
+			
+			$("#mort2").live('swipeup', function (event, ui) {
+                $.mobile.changePage("noise1.html", { transition: "slideup"});
+			});
+			$("#mort2").live('swiperight', function (event, ui) {
+                $.mobile.changePage("mort3.html", { transition: "reverse slide"});
+			});
+			$("#mort2").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("mort1.html", { transition: "slide"});
+			});
+			
+			
+			
+			<!--Mort3-->
+			
+			$("#mort3").live('swipedown', function (event, ui) {
+                $.mobile.changePage("know1.html", { transition: "slidedown"});
+			});
+			
+			$("#mort3").live('swipeup', function (event, ui) {
+                $.mobile.changePage("noise1.html", { transition: "slideup"});
+			});
+			$("#mort3").live('swiperight', function (event, ui) {
+                $.mobile.changePage("mort4.html", { transition: "reverse slide"});
+			});
+			$("#mort3").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("mort2.html", { transition: "slide"});
+			});
+			
+				<!--Mort4-->
+			
+			$("#mort4").live('swipedown', function (event, ui) {
+                $.mobile.changePage("know1.html", { transition: "slidedown"});
+			});
+			
+			$("#mort4").live('swipeup', function (event, ui) {
+                $.mobile.changePage("noise1.html", { transition: "slideup"});
+			});
+			$("#mort4").live('swiperight', function (event, ui) {
+                $.mobile.changePage("mort5.html", { transition: "reverse slide"});
+			});
+			$("#mort4").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("mort3.html", { transition: "slide"});
+			});
+			
+			
+			<!--Mort5-->
+			
+			$("#mort5").live('swipedown', function (event, ui) {
+                $.mobile.changePage("know1.html", { transition: "slidedown"});
+			});
+			
+			$("#mort5").live('swipeup', function (event, ui) {
+                $.mobile.changePage("noise1.html", { transition: "slideup"});
+			});
+			$("#mort5").live('swiperight', function (event, ui) {
+                $.mobile.changePage("mort6.html", { transition: "reverse slide"});
+			});
+			$("#mort5").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("mort4.html", { transition: "slide"});
+			});
+			
+			
+			<!--Mort6-->
+			
+			$("#mort6").live('swipedown', function (event, ui) {
+                $.mobile.changePage("know1.html", { transition: "slidedown"});
+			});
+			
+			$("#mort6").live('swipeup', function (event, ui) {
+                $.mobile.changePage("noise1.html", { transition: "slideup"});
+			});
+			$("#mort6").live('swiperight', function (event, ui) {
+                $.mobile.changePage("mort7.html", { transition: "reverse slide"});
+			});
+			$("#mort6").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("mort5.html", { transition: "slide"});
+			});
+			
+			<!--Mort7-->
+			
+			$("#mort7").live('swipedown', function (event, ui) {
+                $.mobile.changePage("know1.html", { transition: "slidedown"});
+			});
+			
+			$("#mort7").live('swipeup', function (event, ui) {
+                $.mobile.changePage("noise1.html", { transition: "slideup"});
+			});
+			
+			$("#mort7").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("mort6.html", { transition: "slide"});
+			});
+        
+		
+		<!--Noise1-->
+			
+			$("#noise1").live('swipeup', function (event, ui) {
+                $.mobile.changePage("noise2.html", { transition: "slideup"});
+			});
+			$("#noise1").live('swiperight', function (event, ui) {
+                $.mobile.changePage("mort1.html", { transition: "reverse slide"});
+			});
+			$("#noise1").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("record1.html", { transition: "slide"});
+			});
+			
+			
+			<!--Noise2-->
+			
+			$("#noise2").live('swipeup', function (event, ui) {
+                $.mobile.changePage("noise3.html", { transition: "slideup"});
+			});
+			
+			$("#noise2").live('swipedown', function (event, ui) {
+                $.mobile.changePage("noise1.html", { transition: "slidedown"});
+			});
+			
+			$("#noise2").live('swiperight', function (event, ui) {
+                $.mobile.changePage("mort1.html", { transition: "reverse slide"});
+			});
+			$("#noise2").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("record1.html", { transition: "slide"});
+			});
+			
+			
+			<!--Noise3-->
+			
+			$("#noise3").live('swipeup', function (event, ui) {
+                $.mobile.changePage("noise4.html", { transition: "slideup"});
+			});
+			
+			$("#noise3").live('swipedown', function (event, ui) {
+                $.mobile.changePage("noise2.html", { transition: "slidedown"});
+			});
+			
+			$("#noise3").live('swiperight', function (event, ui) {
+                $.mobile.changePage("mort1.html", { transition: "reverse slide"});
+			});
+			$("#noise3").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("record1.html", { transition: "slide"});
+			});
+			
+			
+			<!--Noise4-->
+			
+			
+			
+			$("#noise4").live('swipedown', function (event, ui) {
+                $.mobile.changePage("noise3.html", { transition: "slidedown"});
+			});
+			
+			$("#noise4").live('swiperight', function (event, ui) {
+                $.mobile.changePage("mort1.html", { transition: "reverse slide"});
+			});
+			
+			$("#noise4").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("record1.html", { transition: "slide"});
+			});
+			
+			
+			
+			<!--record1-->
+			
+			
+			
+			
+			$("#record1").live('swiperight', function (event, ui) {
+                $.mobile.changePage("noise1.html", { transition: "reverse slide"});
+			});
+			$("#record1").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("zoom1.html", { transition: "slide"});
+			});
+			
+			
+			
+			<!--zoom1-->
+			
+			
+			
+			
+			$("#zoom1").live('swiperight', function (event, ui) {
+                $.mobile.changePage("record1.html", { transition: "reverse slide"});
+			});
+			$("#zoom1").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("disco1.html", { transition: "slide"});
+			});
+			
+			
+			<!--disco1-->
+	
+			
+			$("#disco1").live('swiperight', function (event, ui) {
+                $.mobile.changePage("zoom1.html", { transition: "reverse slide"});
+			});
+			$("#disco1").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("credits1.html", { transition: "slide"});
+			});
+			
+			<!--credits1-->
+	
+			
+			$("#credits1").live('swiperight', function (event, ui) {
+                $.mobile.changePage("disco1.html", { transition: "reverse slide"});
+			});
+			
+			
+			
+			
+			
+			
+    </script>
+</head>
+
+<body>
+<div id="container">
+  <div data-role="page" class="main" id="mainpage">
+    		<div id="port">
+		
+		
+			<video width='1000' height='562' class='cover' autoplay loop mute style='background:rgb(246,246,246);'>
+				<source src='Fischer_1.mov'>
+			</video>
+            
+            <div id="port-image">		
+			<img src="img/page1/absorb_port.png" style='width:1024px; height:768px; position:absolute;
+    top: 0px; right: 0px; z-index:2'>
+			</div>
+    
+    	
+    
+    	</div>
+   </div>
+</div>
+<!--<script type="text/javascript">
+
+$("body").live('swipeup',function() {
+alert("swiped up");
+});
+
+$("body").live('swipedown',function() {
+alert("swiped down");
+});
+
+$("body").live('swipeleft',function() {
+alert("swiped left");
+});
+
+$("body").live('swiperight',function() {
+alert("swiped right");
+});
+
+$("body").live('tap',function() {
+alert("tapped it");
+});
+
+$("body").on('taphold',function() {
+alert("youheldit");
+});
+
+
+</script>-->
+
+
+<script type="text/javascript">
+ $(function(){
+	$("video").load();
+	setTimeout(function(){
+		$("video").trigger("click").play();
+	},1000);
+});
+/*$("video").live("touchstart",function(){
+	var i = setInterval(function(){
+		$("video").currentTime = 0;
+	},7000);
+});*/
+</script>
+
+
+</body>
+</html>
