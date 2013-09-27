@@ -79,7 +79,8 @@ article.split3{width:100%;padding:0 0 0 25px;margin-top:150px;clear:left;}
 
 .videos{position:fixed;top:110px;left:0;z-index: 0;right:0;}
 	video{z-index:1;}
-	video.right{float:right;}
+	video.right{float:right;
+	position:fixed;top:110px;z-index: 0;right:0;}
 
 .links{width:10000px;height:7000px;}
 	.links aside{margin-left:34px;min-height:3500px;display:inline-block;position:relative;margin-top:0;vertical-align:top;}

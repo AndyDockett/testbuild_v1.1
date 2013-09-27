@@ -143,6 +143,10 @@ text-shadow: none !important;
 #love1 {
 	background-color:#fff;
 }
+
+#love-nav{
+	background-color:white;
+}
 @font-face {
 	font-family: Open Sans;
 	src: url('../ttf-fonts/opensansboldit-webfont.ttf') format('truetype');
@@ -301,5 +305,6 @@ font-family: Alegreya;
   
 #full-horizontal {
 	 margin-top:-64px;
-	 
+	 position:absolute;
+	 z-index:6;
 }
