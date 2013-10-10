@@ -64,10 +64,10 @@ div.box2 span{color:#000;display:block;margin:30px 0 0;font-family: arnhemlf, Ge
 .artificial{display:block;margin:0 auto;z-index:9;position:relative;}
 .artificial img.introtekst{height:1400px;}
 
-article.small{margin:54px auto;width:740px;z-index:9;position:relative;display:block;}
-	article.small p{font-size:32px;font-weight:bold;line-height:42px;margin:0 0 40px;}
-	article.small h1{width:1100px;margin:327px -250px 100px -250px;font-size:60px;line-height:64px;font-family: arnhemlf, Georgia, Times, serif;text-align:center;color:#000;}
-	article.small h2{font-size:32px;color:rgb(255,0,53);}
+article.small{margin:54px auto;width:320px;z-index:9;position:relative;display:block;}
+	article.small p{font-size:16px;font-weight:bold;line-height:21px;margin:0 0 20px;}
+	article.small h1{width:550px;margin:162px -250px 100px -250px;font-size:30px;line-height:32px;font-family: arnhemlf, Georgia, Times, serif;text-align:center;color:#000;}
+	article.small h2{font-size:16px;color:rgb(255,0,53);}
 
 article.split3{width:100%;padding:0 0 0 25px;margin-top:150px;clear:left;}
 	article.split3 aside{width:640px;margin:0 25px 0 0;float:left;height:1400px;}
