@@ -206,8 +206,8 @@ text-shadow: none !important;
 	-webkit-transform:rotate(90deg);
 	width: 768px;
    height: 1024px;
-   margin-left: 110px;
-margin-top: -130px;
+   margin-left: 120px;
+margin-top: -180px;
 margin-bottom: -130px;
 
 background-color:#FFF;
@@ -227,18 +227,7 @@ font-family: Alegreya;
 	
 	}
 	
-	#category-head-v {
-font-family: Alegreya;
-	font-size: 11px;
-	
-	margin-left: 190px;
-	width: 105px;
-	float:left;
-	letter-spacing: 1px;
-	color:#000;
-	
-	
-	}
+
 	
 #title-credits {
 font-family: Alegreya;
@@ -250,7 +239,18 @@ font-family: Alegreya;
 	
 	
 	}
+		#category-head-v {
+font-family: Alegreya;
+	font-size: 11px;
+	margin-top: 28px;
+	margin-left: 190px;
+	width: 105px;
+	float:left;
+	letter-spacing: 1px;
+	color:#000;
 	
+	
+	}
 	#title-credits-v {
 font-family: Alegreya;
 	font-size: 11px;
