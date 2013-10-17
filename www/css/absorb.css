@@ -220,7 +220,7 @@ border-color:red;
 #category-head {
 font-family: Alegreya;
 	font-size: 11px;
-	margin-top: 28px;
+	margin-top: 0px;
 	margin-left: 170px;
 	width: 105px;
 	float:left;
@@ -341,4 +341,12 @@ border-color:green;
 	 margin-top:-64px;
 	 position:absolute;
 	 z-index:6;
+}
+
+#essay-text {
+	width:600px;
+	margin-top: 34px;
+	margin-left: 84px;
+	border-style:solid;
+border-color:blue;
 }
