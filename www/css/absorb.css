@@ -204,10 +204,11 @@ text-shadow: none !important;
 
 #vertical {
 	-webkit-transform:rotate(90deg);
-	width: 768px;
-   height: 1024px;
-   margin-left: 124px;
-margin-top: -132px;
+	margin-top:-132px;
+	margin-left:124px;
+	width:768px;
+	height:1024px;
+position: fixed;
 
 background-color:#FFF;
 color:#000;
@@ -219,8 +220,8 @@ border-color:red;
 #category-head {
 font-family: Alegreya;
 	font-size: 11px;
-	margin-top: 0px;
-	margin-left: 180px;
+	margin-top: 28px;
+	margin-left: 170px;
 	width: 105px;
 	float:left;
 	letter-spacing: 1px;
@@ -234,17 +235,33 @@ font-family: Alegreya;
 font-family: Alegreya;
 	font-size: 11px;
 	margin-top: 28px;
-	margin-left: 393px;
+	margin-left: 688px;
 	letter-spacing: 1px;
 	color:#000;
 	
 	
 	}
-		#category-head-v {
+		
+		
+		
+			#category-head-h {
 font-family: Alegreya;
 	font-size: 11px;
 	margin-top: 28px;
-	margin-left: 190px;
+	margin-left: 393px;
+	width: 105px;
+	float:left;
+	letter-spacing: 1px;
+	color:#000;
+	border-style:solid;
+border-color:pink;
+	
+	
+	}#category-head-v {
+font-family: Alegreya;
+	font-size: 11px;
+	margin-top: 28px;
+	margin-left: 147px;
 	width: 105px;
 	float:left;
 	letter-spacing: 1px;
@@ -258,14 +275,24 @@ border-color:pink;
 font-family: Alegreya;
 	font-size: 11px;
 	margin-top: 28px;
-	margin-left: 688px;
+	margin-left: 393px;
 	letter-spacing: 1px;
 	color:#000;
 	
 	
 	
 	}
+	#title-credits {
+font-family: Alegreya;
+	font-size: 11px;
+	margin-top: 28px;
+	margin-left: 688px;
+	letter-spacing: 1px;
+	color:#000;
 	
+	
+	}
+		
 	
 #vertical-image {
 	width:600px;
