@@ -33,8 +33,14 @@ aside strong, .orange{color:#ff5d00;}
 .red{color:rgb(255,0,53);}
 .blue{color:rgb(56,120,184);}
 .lime{color:rgb(61,227,156);}
-.white{color:white;}
-aside{float:left;position:relative;margin-top:30px;}
+.white{
+	color: #FFF;
+}
+aside{
+	float: left;
+	position: relative;
+	margin-top: 0px;
+}
 
 aside.left{width:1072px;min-height:10px;margin-left:379px;display:inline-block;}
 aside.right{width:500px;min-height:10px;display:inline-block;}
@@ -65,17 +71,56 @@ div.box2 span{color:#000;display:block;margin:30px 0 0;font-family: arnhemlf, Ge
 .artificial img.introtekst{height:1400px;}
 
 article.small{margin:54px auto;width:320px;z-index:9;position:relative;display:block;}
-	article.small p{font-size:16px;font-weight:bold;line-height:21px;margin:0 0 20px;}
+	article.small p{
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 21px;
+	margin: 0 0 20px;
+}
 	article.small h1{width:550px;margin:162px -250px 100px -250px;font-size:30px;line-height:32px;font-family: arnhemlf, Georgia, Times, serif;text-align:center;color:#000;}
 	article.small h2{font-size:16px;color:rgb(255,0,53);}
 
-article.split3{width:100%;padding:0 0 0 25px;margin-top:150px;clear:left;}
-	article.split3 aside{width:640px;margin:0 25px 0 0;float:left;height:1400px;}
-	article.split3 h1{font-size:117px;line-height:102px;text-align:right;margin:0 0 30px;}
-	article.split3 h3{font-size:35px;line-height:43px;margin:0 0 30px;}
-	article.split3 h6{font-size:25px;line-height:25px;font-weight:normal;}
-	article.split3 h6 em{font-size:25px;font-style: italic;}
-	article.split3 p{font-size:35px;line-height:43px;margin:0 0 30px;}
+article.split3{
+	width: 100%;
+	margin-top: 0px;
+	clear: left;
+	padding: 0;
+}
+	article.split3 aside{
+	width: 320px;
+	float: left;
+	height: 700px;
+	margin-top: 0;
+	margin-right: 20px;
+	margin-bottom: 0;
+	margin-left: 0px;
+}
+	article.split3 h1{
+	font-size: 59px;
+	line-height: 51px;
+	text-align: right;
+	margin: 0px 0 15px;
+}
+	article.split3 h3{
+	font-size: 16px;
+	line-height: 22px;
+	margin: 0 0 20px;
+}
+	article.split3 h6{
+	font-size: 12px;
+	line-height: 12px;
+	font-weight: normal;
+	margin-top: -10px;
+}
+	article.split3 h6 em{
+	font-size: 12px;
+	font-style: italic;
+}
+	article.split3 p{
+	font-size: 16px;
+	line-height: 24px;
+	margin: 0 0 20px;
+}
 
 .videos{position:fixed;top:110px;left:0;z-index: 0;right:0;}
 	video{z-index:1;}

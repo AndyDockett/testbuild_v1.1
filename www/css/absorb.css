@@ -146,6 +146,10 @@ text-shadow: none !important;
 #love-nav{
 	background-color:white;
 }
+
+#imagine-nav{
+	background-color:black;
+}
 @font-face {
 	font-family: Open Sans;
 	src: url('../ttf-fonts/opensansboldit-webfont.ttf') format('truetype');
@@ -332,6 +336,16 @@ border-color:green;
 	color: #FF0035;
 }
 
+.imagine {
+	color: #3ce29c;
+	background-color:black;
+}
+
+
+.white {
+	color: white;
+}
+
 #vidholder {
 	margin-left:68px;
 	margin-top: 100px;
@@ -360,4 +374,22 @@ border-color:green;
 	margin-left: 147px;
 	/* [disabled]border-style:solid; */
 	/* [disabled]border-color: blue; */
+}
+#imagine1 #imageine-nav #imagine-text h2 {
+	font-size: 16px;
+	color: #3ce29c;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+#imagine1 #imageine-nav #imagine-text p {
+	line-height: 21px;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+
+.know{
+	
+	color:rgb(56,120,184);
+	
 }
