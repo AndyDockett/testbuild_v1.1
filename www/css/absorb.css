@@ -310,23 +310,18 @@ font-family: Alegreya;
 		
 	
 #vertical-image {
-	width:600px;
+	width: 600px;
 	margin-top: 34px;
 	margin-left: 84px;
-	border-style:solid;
-border-color:blue;
 }
 
 #vertical-image-title {
-	width:600px;
+	width: 600px;
 	margin-top: 10px;
 	margin-left: 84px;
 	font-family: Open Sans Reg;
 	font-size: 16px;
-	color:#000;
-	border-style:solid;
-border-color:green;
-	
+	color: #000;
 }
 .what {
 	color: rgb(255, 93, 0);

@@ -332,6 +332,32 @@
 			});
 			
 			
+						
+			$("#imagine1").live('swipeup', function (event, ui) {
+                $.mobile.changePage("imagine2.html", { transition: "slideup"});
+			});
+			
+			
+			
+			
+					
+			<!--imagine2--> 
+			
+			$("#imagine2").live('swiperight', function (event, ui) {
+                $.mobile.changePage("diagrams1.html", { transition: "reverse slide"});
+			});
+			
+				
+			$("#imagine2").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("know1.html", { transition: "slide"});
+			});
+			
+			
+						
+			$("#imagine2").live('swipedown', function (event, ui) {
+                $.mobile.changePage("imagine1.html", { transition: "slidedown"});
+			});
+			
 			<!--Know1--> 
 			
 			
@@ -598,6 +624,55 @@
     	</div>
    </div>
 </div>
+
+
+
+ <script type="text/javascript">
+$(window).scroll(function(){
+	var top = $(window).scrollTop();
+	var img = $(".img");
+	var src = "img/imagine/";
+	if(top<525){
+		img.css({position:"absolute",top:581});
+	}
+	if(top>535){
+		img.css({position:"fixed",top:35});
+	}
+	if(top>0 && top<841){
+		img.attr("src",src+"1.jpg");
+	}
+	if(top>841 && top<1166){
+		img.attr("src",src+"2.jpg");
+	}
+	if(top>1166 && top<1492){
+		img.attr("src",src+"3.jpg");
+	}
+	if(top>1492 && top<1817){
+		img.attr("src",src+"4.jpg");
+	}
+	if(top>1817 && top<2143){
+		img.attr("src",src+"5.jpg");
+	}
+	if(top>2143 && top<1968){
+		img.attr("src",src+"6.jpg");
+	}
+	if(top>1968 && top<2294){
+		img.attr("src",src+"7.jpg");
+	}
+	if(top>2294 && top<2619){
+		img.attr("src",src+"8.jpg");
+	}
+	if(top>2619 && top<2945){
+		img.attr("src",src+"9.jpg");
+	}
+	if(top>2945 && top<3270){
+		img.attr("src",src+"10.jpg");
+	}
+	if(top>3270 && top<20000){
+		img.attr("src",src+"11.jpg");
+	}
+});
+</script>
 <!--<script type="text/javascript">
 
 $("body").live('swipeup',function() {
