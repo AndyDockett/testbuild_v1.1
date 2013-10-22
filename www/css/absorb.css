@@ -382,8 +382,12 @@ font-family: Alegreya;
 	font-size: 16px;
 }
 
-
-.know{
+ #imageine-nav #imagine-text p {
+	font-size: 16px;
+	font-style: normal;
+	line-height: 21px;
+}
+.know {
 	
 	color:rgb(56,120,184);
 	
