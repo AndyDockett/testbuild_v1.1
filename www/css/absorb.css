@@ -214,7 +214,7 @@ text-shadow: none !important;
 	font-family: open sans medium italic;
 	font-size: 16px;
 	text-align: center;
-	margin-top: 370px
+	margin-top: 490px
 }
 
 .second-line {
@@ -312,13 +312,13 @@ font-family: Alegreya;
 #vertical-image {
 	width: 600px;
 	margin-top: 34px;
-	margin-left: 84px;
+	margin-left: 88px;
 }
 
 #vertical-image-title {
 	width: 600px;
 	margin-top: 10px;
-	margin-left: 84px;
+	margin-left: 89px;
 	font-family: Open Sans Reg;
 	font-size: 16px;
 	color: #000;
