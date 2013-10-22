@@ -99,7 +99,7 @@
        
 
      
-     <img src='img/imagine/1.jpg' class='img' style='position:fixed;left:24px;top:10px;width:465px;'> 
+     <img src='img/imagine/1.jpg' class='img' style='position:absolute;left:24px;top:525px;width:465px;'> 
      </div> 
      <script type="text/javascript">
 $(window).scroll(function(){
@@ -107,7 +107,7 @@ $(window).scroll(function(){
 	var img = $(".img");
 	var src = "img/imagine/";
 	if(top<525){
-		img.css({position:"fixed",top:10});
+		img.css({position:"absolute",top:525});
 	}
 	if(top>535){
 		img.css({position:"fixed",top:35});
