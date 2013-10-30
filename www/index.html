@@ -23,7 +23,30 @@
 	
 	
 	
-	
+	     <script src="js/jquery.js"></script>
+    <script src="js/jquery.event.special.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/jquery.scrollsnap.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(document).scrollsnap({
+        snaps: '.snap',
+        proximity: 400,
+        easing: 'easeOutBack',
+		duration: '500'
+        });
+      $('#scrollingy300').scrollsnap({
+        snaps: 'img',
+        proximity: 160
+      });
+      $('#scrollingx300').scrollsnap({
+        direction: 'x',
+        snaps: 'img',
+        proximity: 160
+      });
+      $("code pre").snippet("javascript",{style:"vim",showNum:false});
+    });
+  </script>
 	
 	
 	
