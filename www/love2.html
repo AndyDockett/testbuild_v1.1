@@ -4,13 +4,37 @@
       <link href="css/jquery.mobile.min.css" rel="stylesheet" type="text/css" />
     <link href="css/absorb.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/stylesheet.css" media="all" />
+    
+      <script src="js/jquery.js"></script>
+    <script src="js/jquery.event.special.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/jquery.scrollsnap.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(document).scrollsnap({
+        snaps: '.snap',
+        proximity: 400,
+        easing: 'swing'
+        });
+      $('#scrollingy300').scrollsnap({
+        snaps: 'img',
+        proximity: 160
+      });
+      $('#scrollingx300').scrollsnap({
+        direction: 'x',
+        snaps: 'img',
+        proximity: 160
+      });
+      $("code pre").snippet("javascript",{style:"vim",showNum:false});
+    });
+  </script>
 </head>
-<body>
+
    		 <div data-role="page" id="love2" data-theme="d"> 
        
        
      
-   			<div id="love-nav">
+   			<div id="love-nav" class="snap">
           
            <div id="category-head"><p class="love">FEATURE</p></div> 
         	<div id="title-credits"><p class="love">AN ARTIFICIAL FORMULA FOR TRUE LOVE</p>
@@ -23,7 +47,9 @@
             <video id="jo" width='1024' height='404' src='johannes6.mp4' autoplay class='videos' loop muted  >
 			</video>
             
-			<h1 id='h1' style='width:478px;margin:162px auto 0;z-index:9;position:relative;display:block;font-size:30px;line-height:32px;font-family: arnhemlf, Georgia, Times, serif;text-align:center;color:#000;'>...At least that's what the personality test on dating site <span class='red'>Matchaffinity</span> tells me. Mathematical calculations can now show us where to find our one and only. Absorb Magazine tests the effect and goes on a date.</h1>
+			<img src="img/page6/Article_ArtificialLove_Forside.png" width="1024"  height="768" margin-top="-60px">
+            
+            <h1 id='h1' class="snap" style='width:478px;margin:162px auto 0;z-index:9;position:relative;display:block;font-size:30px;line-height:32px;font-family: arnhemlf, Georgia, Times, serif;text-align:center;color:#000;'>...At least that's what the personality test on dating site <span class='red'>Matchaffinity</span> tells me. Mathematical calculations can now show us where to find our one and only. Absorb Magazine tests the effect and goes on a date.</h1>
 		<article class='small'>
 
 			<p>They say that love is the one thing that money can't buy. But perhaps this is not entirely true anymore: More than ever, dating sites sell us the possibility of meeting the right one. Globally, such sites generated sales of four billion dollars last year, and in order to get a bigger slice of the pie they constantly refine the methods for finding the right one. Today this means that dating sites use algorithms to identify your one and only. Love has become a number.</p>
