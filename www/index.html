@@ -16,19 +16,14 @@
     
     <script src="js/jquery-1.6.4.min.js" type="text/javascript"></script>
     <script src="js/jquery.mobile.min.js" type="text/javascript"></script>
-    
+   
     
     <script src="js/didi.js" type="text/javascript"></script>
  
 	
 	
 	
-	   
-    <script src="js/jquery.event.special.js"></script>
-  <script src="js/jquery.easing.min.js"></script>
-  <script src="js/jquery.scrollsnap.js"></script>  
- 
- 
+	
 	
 	
 	
@@ -42,7 +37,7 @@
  
         $(document).ready(function() {
             $("#port-image").live('swipeup', function (event, ui) {
-                $.mobile.changePage("diagrams1.html", { transition: "slideup"});
+                $.mobile.changePage("love1.html", { transition: "slideup"});
             });
             
             <!--editorial--> 
@@ -60,7 +55,116 @@
 			});
 			
 			$("#instruct").live('swipeup', function (event, ui) {
-                $.mobile.changePage("diagrams1.html", { transition: "slideup"});
+                $.mobile.changePage("monuments.html", { transition: "slideup"});
+			});
+			
+			<!--monuments--> 
+			$("#monuments").live('swiperight', function (event, ui) {
+                $.mobile.changePage("instruct.html", { transition: "reverse slide"});
+			});
+			
+			$("#monuments").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("count.html", { transition: "slide"});
+			});
+			
+			$("#monuments").live('swipeup', function (event, ui) {
+                $.mobile.changePage("monuments1.html", { transition: "slideup"});
+            });
+			
+			<!--monuments1--> 
+			$("#monuments1").live('swipeup', function (event, ui) {
+                $.mobile.changePage("monuments2.html", { transition: "slideup"});
+			});
+			
+			$("#monuments1").live('swipedown', function (event, ui) {
+                $.mobile.changePage("monuments.html", { transition: "slidedown"});
+			});
+			
+			$("#monuments1").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("count.html", { transition: "slide"});
+			});
+			<!--monuments2--> 
+			$("#monuments2").live('swipeup', function (event, ui) {
+                $.mobile.changePage("monuments3.html", { transition: "slideup"});
+			});
+			
+			$("#monuments2").live('swipedown', function (event, ui) {
+                $.mobile.changePage("monuments1.html", { transition: "slidedown"});
+			});
+			$("#monuments2").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("count.html", { transition: "slide"});
+			});
+			
+			<!--monuments3--> 
+			$("#monuments3").live('swipeup', function (event, ui) {
+                $.mobile.changePage("monuments4.html", { transition: "slideup"});
+			});
+			
+			$("#monuments3").live('swipedown', function (event, ui) {
+                $.mobile.changePage("monuments2.html", { transition: "slidedown"});
+			});
+			$("#monuments3").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("count.html", { transition: "slide"});
+			});
+			
+			
+			<!--monuments4--> 
+			$("#monuments4").live('swipeup', function (event, ui) {
+                $.mobile.changePage("monuments5.html", { transition: "slideup"});
+			});
+			
+			$("#monuments4").live('swipedown', function (event, ui) {
+                $.mobile.changePage("monuments3.html", { transition: "slidedown"});
+			});
+			$("#monuments4").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("count.html", { transition: "slide"});
+			});
+			
+			
+			<!--monuments5--> 
+			$("#monuments5").live('swipeup', function (event, ui) {
+                $.mobile.changePage("monuments6.html", { transition: "slideup"});
+			});
+			
+			$("#monuments5").live('swipedown', function (event, ui) {
+                $.mobile.changePage("monuments4.html", { transition: "slidedown"});
+			});
+			$("#monuments5").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("count.html", { transition: "slide"});
+			});
+			
+			<!--monuments6--> 
+			$("#monuments6").live('swipeup', function (event, ui) {
+                $.mobile.changePage("monuments7.html", { transition: "slideup"});
+			});
+			
+			$("#monuments6").live('swipedown', function (event, ui) {
+                $.mobile.changePage("monuments5.html", { transition: "slidedown"});
+			});
+			
+			$("#monuments6").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("count.html", { transition: "slide"});
+			});
+			<!--monuments7--> 
+			$("#monuments7").live('swipeup', function (event, ui) {
+                $.mobile.changePage("monuments8.html", { transition: "slideup"});
+			});
+			
+			$("#monuments7").live('swipedown', function (event, ui) {
+                $.mobile.changePage("monuments6.html", { transition: "slidedown"});
+			});
+			$("#monuments7").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("count.html", { transition: "slide"});
+			});
+			
+			
+			<!--monuments8--> 
+			
+			$("#monuments8").live('swipedown', function (event, ui) {
+                $.mobile.changePage("monuments7.html", { transition: "slidedown"});
+			});
+			$("#monuments8").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("count.html", { transition: "slide"});
 			});
 			
 			
@@ -68,28 +172,83 @@
 			
 			
 			
+			<!--count1--> 
 			
-			
-				<!--diagrams1--> 
-			
-			$("#dia").live('swipedown', function (event, ui) {
-                $.mobile.changePage("index.html", { transition: "slidedown"});
+			//  $("#count1").live('swipeup', function (event, ui) {
+             // $.mobile.changePage("count2.html", { transition: "slideup"});
+			});
+			$("#count1").live('swiperight', function (event, ui) {
+                $.mobile.changePage("monuments.html", { transition: "reverse slide"});
+			});
+			$("#count1").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("synge.html", { transition: "slide"});
 			});
 			
-			$("#dia").live('swipeup', function (event, ui) {
-                $.mobile.changePage("count.html", { transition: "slideup"});
+			
+			<!--count2--> 
+			
+			$("#count2").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("synge.html", { transition: "slide"});
 			});
-			$("#dia").live('swiperight', function (event, ui) {
+			$("#count2").live('swipedown', function (event, ui) {
+                $.mobile.changePage("count.html", { transition: "slidedown"});
+			});
+			$("#count2").live('swiperight', function (event, ui) {
+                $.mobile.changePage("monuments.html", { transition: "reverse slide"});
+			});
+			
+			
+			
+			
+			
+			<!--synge--> 
+			
+			$("#synge").live('swipeup', function (event, ui) {
+                $.mobile.changePage("love1.html", { transition: "slideup"});
+			});
+			$("#synge").live('swipedown', function (event, ui) {
+                $.mobile.changePage("count.html", { transition: "slidedown"});
+			});
+			
+			
+			
+			<!--love1--> 
+			
+			
+			$("#love1").live('swiperight', function (event, ui) {
+                $.mobile.changePage("synge.html", { transition: "reverse slide"});
+			});
+			$("#love1").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("diagramstest.html", { transition: "slide"});
+			});
+			$("#love1").live('swipeup', function (event, ui) {
+                $.mobile.changePage("love2.html", { transition: "slideup"});
+			});
+			
+			
+			
+			
+			
+			<!--diagrams1--> 
+			
+			$("#diagrams1").live('swipedown', function (event, ui) {
+                $.mobile.changePage("love1.html", { transition: "slidedown"});
+			});
+			
+			$("#diagrams1").live('swipeup', function (event, ui) {
+                $.mobile.changePage("imagine1.html", { transition: "slideup"});
+			});
+			$("#diagrams1").live('swiperight', function (event, ui) {
                 $.mobile.changePage("diagrams2.html", { transition: "reverse slide"});
 			});
 			
 			<!--diagrams2--> 
 			
 			$("#diagrams2").live('swipedown', function (event, ui) {
-                $.mobile.changePage("index.html", { transition: "slidedown"});
+                $.mobile.changePage("love1.html", { transition: "slidedown"});
 			});
 			$("#diagrams2").live('swipeup', function (event, ui) {
-                $.mobile.changePage("count.html", { transition: "slideup"});
+                $.mobile.changePage("imagine1.html", { transition: "slideup"});
 			});
 			
 			$("#diagrams2").live('swiperight', function (event, ui) {
@@ -103,10 +262,10 @@
 			<!--diagrams3--> 
 			
 			$("#diagrams3").live('swipedown', function (event, ui) {
-                $.mobile.changePage("index.html", { transition: "slidedown"});
+                $.mobile.changePage("love1.html", { transition: "slidedown"});
 			});
 			$("#diagrams3").live('swipeup', function (event, ui) {
-                $.mobile.changePage("count.html", { transition: "slideup"});
+                $.mobile.changePage("imagine1.html", { transition: "slideup"});
 			});
 			
 			$("#diagrams3").live('swiperight', function (event, ui) {
@@ -119,10 +278,10 @@
 			<!--diagrams4--> 
 			
 				$("#diagrams4").live('swipedown', function (event, ui) {
-                $.mobile.changePage("index.html", { transition: "slidedown"});
+                $.mobile.changePage("love1.html", { transition: "slidedown"});
 			});
 			$("#diagrams4").live('swipeup', function (event, ui) {
-                $.mobile.changePage("count.html", { transition: "slideup"});
+                $.mobile.changePage("imagine1.html", { transition: "slideup"});
 			});
 			
 			$("#diagrams4").live('swiperight', function (event, ui) {
@@ -136,10 +295,10 @@
 			<!--diagrams5--> 
 			
 					$("#diagrams5").live('swipedown', function (event, ui) {
-                $.mobile.changePage("index.html", { transition: "slidedown"});
+                $.mobile.changePage("love1.html", { transition: "slidedown"});
 			});
 			$("#diagrams5").live('swipeup', function (event, ui) {
-                $.mobile.changePage("count.html", { transition: "slideup"});
+                $.mobile.changePage("imagine1.html", { transition: "slideup"});
 			});
 			
 			
@@ -147,444 +306,144 @@
                 $.mobile.changePage("diagrams4.html", { transition: "slide"});
 			});
 			
-			
-			
-			
-			
-			
-			
-			<!--monuments--> 
-			$("#monuments").live('swiperight', function (event, ui) {
-                $.mobile.changePage("count.html", { transition: "reverse slide"});
-			});
-			
-			$("#monuments").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("love1.html", { transition: "slide"});
-			});
-			
-			$("#monuments").live('swipeup', function (event, ui) {
-                $.mobile.changePage("monuments1.html", { transition: "slideup"});
-            });
-			
-			
-			
-			<!--monuments1--> 
-			
-			
-			
-			$("#monuments1").live('swiperight', function (event, ui) {
-                $.mobile.changePage("count.html", { transition: "reverse slide"});
-			});
-			
-			
-			
-			$("#monuments1").live('swipeup', function (event, ui) {
-                $.mobile.changePage("monuments2.html", { transition: "slideup"});
-			});
-			
-			$("#monuments1").live('swipedown', function (event, ui) {
-                $.mobile.changePage("monuments.html", { transition: "slidedown"});
-			});
-			
-			$("#monuments1").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("love1.html", { transition: "slide"});
-			});
-			
-			
-			
-			
-			<!--monuments2--> 
-			
-			$("#monuments").live('swiperight', function (event, ui) {
-                $.mobile.changePage("count.html", { transition: "reverse slide"});
-			});
-			
-			
-			$("#monuments2").live('swipeup', function (event, ui) {
-                $.mobile.changePage("monuments3.html", { transition: "slideup"});
-			});
-			
-			$("#monuments2").live('swipedown', function (event, ui) {
-                $.mobile.changePage("monuments1.html", { transition: "slidedown"});
-			});
-			$("#monuments2").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("love1.html", { transition: "slide"});
-			});
-			
-			<!--monuments3--> 
-			
-			
-			$("#monuments3").live('swiperight', function (event, ui) {
-                $.mobile.changePage("count.html", { transition: "reverse slide"});
-			});
-			
-			
-			$("#monuments3").live('swipeup', function (event, ui) {
-                $.mobile.changePage("monuments4.html", { transition: "slideup"});
-			});
-			
-			$("#monuments3").live('swipedown', function (event, ui) {
-                $.mobile.changePage("monuments2.html", { transition: "slidedown"});
-			});
-			$("#monuments3").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("love1.html", { transition: "slide"});
-			});
-			
-			
-			<!--monuments4--> 
-			
-			$("#monuments4").live('swiperight', function (event, ui) {
-                $.mobile.changePage("count.html", { transition: "reverse slide"});
-			});
-			
-			
-			$("#monuments4").live('swipeup', function (event, ui) {
-                $.mobile.changePage("monuments5.html", { transition: "slideup"});
-			});
-			
-			$("#monuments4").live('swipedown', function (event, ui) {
-                $.mobile.changePage("monuments3.html", { transition: "slidedown"});
-			});
-			$("#monuments4").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("love1.html", { transition: "slide"});
-			});
-			
-			
-			<!--monuments5--> 
-			
-			
-			$("#monuments").live('swiperight', function (event, ui) {
-                $.mobile.changePage("count.html", { transition: "reverse slide"});
-			});
-			
-			
-			$("#monuments5").live('swipeup', function (event, ui) {
-                $.mobile.changePage("monuments6.html", { transition: "slideup"});
-			});
-			
-			$("#monuments5").live('swipedown', function (event, ui) {
-                $.mobile.changePage("monuments4.html", { transition: "slidedown"});
-			});
-			$("#monuments5").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("love1.html", { transition: "slide"});
-			});
-			
-			<!--monuments6--> 
-			
-			
-			$("#monuments6").live('swiperight', function (event, ui) {
-                $.mobile.changePage("count.html", { transition: "reverse slide"});
-			});
-			
-			
-			
-			$("#monuments6").live('swipeup', function (event, ui) {
-                $.mobile.changePage("monuments7.html", { transition: "slideup"});
-			});
-			
-			$("#monuments6").live('swipedown', function (event, ui) {
-                $.mobile.changePage("monuments5.html", { transition: "slidedown"});
-			});
-			
-			$("#monuments6").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("love1.html", { transition: "slide"});
-			});
-			
-			
-			
-			
-			
-			<!--monuments7--> 
-			
-			
-			$("#monuments7").live('swiperight', function (event, ui) {
-                $.mobile.changePage("count.html", { transition: "reverse slide"});
-			});
-			
-			
-			$("#monuments7").live('swipeup', function (event, ui) {
-                $.mobile.changePage("monuments8.html", { transition: "slideup"});
-			});
-			
-			$("#monuments7").live('swipedown', function (event, ui) {
-                $.mobile.changePage("monuments6.html", { transition: "slidedown"});
-			});
-			$("#monuments7").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("love1.html", { transition: "slide"});
-			});
-			
-			
-			<!--monuments8--> 
-			
-			
-			$("#monuments").live('swiperight', function (event, ui) {
-                $.mobile.changePage("count.html", { transition: "reverse slide"});
-			});
-			
-			
-			$("#monuments8").live('swipedown', function (event, ui) {
-                $.mobile.changePage("monuments7.html", { transition: "slidedown"});
-			});
-			$("#monuments8").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("love1.html", { transition: "slide"});
-			});
-			
-			
-			});
-			
-			
-			
-			<!--count1--> 
-			
-			//  $("#count1").live('swipeup', function (event, ui) {
-             // $.mobile.changePage("count2.html", { transition: "slideup"});
-			
-			$("#count1").live('swiperight', function (event, ui) {
-                $.mobile.changePage("diagrams1.html", { transition: "reverse slide"});
-			});
-			$("#count1").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("monuments.html", { transition: "slide"});
-			});
-			
-			
-			$("#count1").live('swipeup', function (event, ui) {
-                $.mobile.changePage("count2.html", { transition: "slideup"});
-			});
-			
-			
-			
-			<!--count2--> 
-			
-			$("#count2").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("monuments.html", { transition: "slide"});
-			});
-			$("#count2").live('swipedown', function (event, ui) {
-                $.mobile.changePage("count.html", { transition: "slidedown"});
-			});
-			$("#count2").live('swiperight', function (event, ui) {
-                $.mobile.changePage("diagrams1.html", { transition: "reverse slide"});
-			});
-			
-			
-			
-			
-			
-			<!--synge--> 
-			
-			$("#synge").live('swipeup', function (event, ui) {
-                $.mobile.changePage("imagine1.html", { transition: "slideup"});
-			});
-			$("#synge").live('swipedown', function (event, ui) {
-                $.mobile.changePage("essay1.html", { transition: "slidedown"});
-			});
-			
-			
-			
-			<!--love1--> 
-			
-			
-			$("#love1").live('swiperight', function (event, ui) {
-                $.mobile.changePage("monuments.html", { transition: "reverse slide"});
-			});
-			$("#love1").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("noise1.html", { transition: "slide"});
-			});
-			$("#love1").live('swipeup', function (event, ui) {
-                $.mobile.changePage("love2.html", { transition: "slideup"});
-			});
-			
-			
-			
-				<!--love2--> 
-			
-			
-			$("#love2").live('swiperight', function (event, ui) {
-                $.mobile.changePage("monuments.html", { transition: "reverse slide"});
-			});
-			$("#love2").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("noise1.html", { transition: "slide"});
-			});
-		/*	$("#love2").live('swipedown', function (event, ui) {
-                $.mobile.changePage("love1.html", { transition: "slidedown"});
-			}); */
-			
-			
-		
 			<!--imagine1--> 
 			
 			$("#imagine1").live('swiperight', function (event, ui) {
-                $.mobile.changePage("synge.html", { transition: "reverse slide"});
+                $.mobile.changePage("diagrams1.html", { transition: "reverse slide"});
 			});
 			
 				
 			$("#imagine1").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("know.html", { transition: "slide"});
+                $.mobile.changePage("know1.html", { transition: "slide"});
 			});
 			
-			
-						
-			$("#imagine1").live('swipeup', function (event, ui) {
-                $.mobile.changePage("imagine2.html", { transition: "slideup"});
-			});
-			
-			
-			
-			
-					
-			<!--imagine2--> 
-			
-			$("#imagine2").live('swiperight', function (event, ui) {
-                $.mobile.changePage("synge.html", { transition: "reverse slide"});
-			});
-			
-				
-			$("#imagine2").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("know.html", { transition: "slide"});
-			});
-			
-			
-						
-			$("#imagine2").live('swipedown', function (event, ui) {
-                $.mobile.changePage("imagine1.html", { transition: "slidedown"});
-			});
 			
 			<!--Know1--> 
 			
 			
 			
-			$("#know").live('swiperight', function (event, ui) {
+			$("#know1").live('swiperight', function (event, ui) {
                 $.mobile.changePage("imagine1.html", { transition: "reverse slide"});
 			});
 			
 				
-			$("#know").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("record1.html", { transition: "slide"});
+			$("#know1").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("mort1.html", { transition: "slide"});
 			});
 			
-			<!--essay1--> 
+			<!--Mort1--> 
 			
 			
-			$("#essay1").live('swipedown', function (event, ui) {
-                $.mobile.changePage("noise1.html", { transition: "slidedown"});
+			$("#mort1").live('swipedown', function (event, ui) {
+                $.mobile.changePage("know1.html", { transition: "slidedown"});
 			});
 			
-			$("#essay1").live('swipeup', function (event, ui) {
-                $.mobile.changePage("synge.html", { transition: "slideup"});
+			$("#mort1").live('swipeup', function (event, ui) {
+                $.mobile.changePage("noise1.html", { transition: "slideup"});
 			});
-			$("#essay1").live('swiperight', function (event, ui) {
-                $.mobile.changePage("essay2.html", { transition: "reverse slide"});
-			});
-			
-			
-			<!--essay2-->
-			
-			$("#essay2").live('swipedown', function (event, ui) {
-                $.mobile.changePage("noise1.html", { transition: "slidedown"});
-			});
-			
-			$("#essay2").live('swipeup', function (event, ui) {
-                $.mobile.changePage("synge.html", { transition: "slideup"});
-			});
-			$("#essay2").live('swiperight', function (event, ui) {
-                $.mobile.changePage("essay3.html", { transition: "reverse slide"});
-			});
-			$("#essay2").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("essay1.html", { transition: "slide"});
+			$("#mort1").live('swiperight', function (event, ui) {
+                $.mobile.changePage("mort2.html", { transition: "reverse slide"});
 			});
 			
 			
+			<!--Mort2-->
 			
-					
-			<!--essay3-->
-			
-			$("#essay3").live('swipedown', function (event, ui) {
-                $.mobile.changePage("noise1.html", { transition: "slidedown"});
+			$("#mort2").live('swipedown', function (event, ui) {
+                $.mobile.changePage("know1.html", { transition: "slidedown"});
 			});
 			
-			$("#essay3").live('swipeup', function (event, ui) {
-                $.mobile.changePage("synge.html", { transition: "slideup"});
+			$("#mort2").live('swipeup', function (event, ui) {
+                $.mobile.changePage("noise1.html", { transition: "slideup"});
 			});
-			$("#essay3").live('swiperight', function (event, ui) {
-                $.mobile.changePage("essay4.html", { transition: "reverse slide"});
+			$("#mort2").live('swiperight', function (event, ui) {
+                $.mobile.changePage("mort3.html", { transition: "reverse slide"});
 			});
-			$("#essay3").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("essay2.html", { transition: "slide"});
-			});
-			
-			
-						
-			
-					
-			<!--essay4-->
-			
-			$("#essay4").live('swipedown', function (event, ui) {
-                $.mobile.changePage("noise1.html", { transition: "slidedown"});
-			});
-			
-			$("#essay4").live('swipeup', function (event, ui) {
-                $.mobile.changePage("synge.html", { transition: "slideup"});
-			});
-			$("#essay4").live('swiperight', function (event, ui) {
-                $.mobile.changePage("essay5.html", { transition: "reverse slide"});
-			});
-			$("#essay4").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("essay3.html", { transition: "slide"});
+			$("#mort2").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("mort1.html", { transition: "slide"});
 			});
 			
 			
 			
-					
-			<!--essay5-->
+			<!--Mort3-->
 			
-			$("#essay5").live('swipedown', function (event, ui) {
-                $.mobile.changePage("noise1.html", { transition: "slidedown"});
+			$("#mort3").live('swipedown', function (event, ui) {
+                $.mobile.changePage("know1.html", { transition: "slidedown"});
 			});
 			
-			$("#essay5").live('swipeup', function (event, ui) {
-                $.mobile.changePage("synge.html", { transition: "slideup"});
+			$("#mort3").live('swipeup', function (event, ui) {
+                $.mobile.changePage("noise1.html", { transition: "slideup"});
 			});
-			$("#essay5").live('swiperight', function (event, ui) {
-                $.mobile.changePage("essay6.html", { transition: "reverse slide"});
+			$("#mort3").live('swiperight', function (event, ui) {
+                $.mobile.changePage("mort4.html", { transition: "reverse slide"});
 			});
-			$("#essay5").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("essay4.html", { transition: "slide"});
-			});
-			
-					
-			
-					
-			<!--essay6-->
-			
-			$("#essay6").live('swipedown', function (event, ui) {
-                $.mobile.changePage("noise1.html", { transition: "slidedown"});
+			$("#mort3").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("mort2.html", { transition: "slide"});
 			});
 			
-			$("#essay6").live('swipeup', function (event, ui) {
-                $.mobile.changePage("synge.html", { transition: "slideup"});
-			});
-			$("#essay6").live('swiperight', function (event, ui) {
-                $.mobile.changePage("essay7.html", { transition: "reverse slide"});
-			});
-			$("#essay6").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("essay5.html", { transition: "slide"});
+				<!--Mort4-->
+			
+			$("#mort4").live('swipedown', function (event, ui) {
+                $.mobile.changePage("know1.html", { transition: "slidedown"});
 			});
 			
-					
-			
-					
-			<!--essay7-->
-			
-			$("#essay7").live('swipedown', function (event, ui) {
-                $.mobile.changePage("noise1.html", { transition: "slidedown"});
+			$("#mort4").live('swipeup', function (event, ui) {
+                $.mobile.changePage("noise1.html", { transition: "slideup"});
+			});
+			$("#mort4").live('swiperight', function (event, ui) {
+                $.mobile.changePage("mort5.html", { transition: "reverse slide"});
+			});
+			$("#mort4").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("mort3.html", { transition: "slide"});
 			});
 			
-			$("#essay7").live('swipeup', function (event, ui) {
-                $.mobile.changePage("synge.html", { transition: "slideup"});
+			
+			<!--Mort5-->
+			
+			$("#mort5").live('swipedown', function (event, ui) {
+                $.mobile.changePage("know1.html", { transition: "slidedown"});
 			});
 			
-			$("#essay7").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("essay6.html", { transition: "slide"});
+			$("#mort5").live('swipeup', function (event, ui) {
+                $.mobile.changePage("noise1.html", { transition: "slideup"});
 			});
+			$("#mort5").live('swiperight', function (event, ui) {
+                $.mobile.changePage("mort6.html", { transition: "reverse slide"});
+			});
+			$("#mort5").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("mort4.html", { transition: "slide"});
+			});
+			
+			
+			<!--Mort6-->
+			
+			$("#mort6").live('swipedown', function (event, ui) {
+                $.mobile.changePage("know1.html", { transition: "slidedown"});
+			});
+			
+			$("#mort6").live('swipeup', function (event, ui) {
+                $.mobile.changePage("noise1.html", { transition: "slideup"});
+			});
+			$("#mort6").live('swiperight', function (event, ui) {
+                $.mobile.changePage("mort7.html", { transition: "reverse slide"});
+			});
+			$("#mort6").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("mort5.html", { transition: "slide"});
+			});
+			
+			<!--Mort7-->
+			
+			$("#mort7").live('swipedown', function (event, ui) {
+                $.mobile.changePage("know1.html", { transition: "slidedown"});
+			});
+			
+			$("#mort7").live('swipeup', function (event, ui) {
+                $.mobile.changePage("noise1.html", { transition: "slideup"});
+			});
+			
+			$("#mort7").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("mort6.html", { transition: "slide"});
+			});
+        
 		
 		<!--Noise1-->
 			
@@ -592,10 +451,10 @@
                 $.mobile.changePage("noise2.html", { transition: "slideup"});
 			});
 			$("#noise1").live('swiperight', function (event, ui) {
-                $.mobile.changePage("love1.html", { transition: "reverse slide"});
+                $.mobile.changePage("mort1.html", { transition: "reverse slide"});
 			});
 			$("#noise1").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("essay1.html", { transition: "slide"});
+                $.mobile.changePage("record1.html", { transition: "slide"});
 			});
 			
 			
@@ -610,7 +469,7 @@
 			});
 			
 			$("#noise2").live('swiperight', function (event, ui) {
-                $.mobile.changePage("essay1.html", { transition: "reverse slide"});
+                $.mobile.changePage("mort1.html", { transition: "reverse slide"});
 			});
 			$("#noise2").live('swipeleft', function (event, ui) {
                 $.mobile.changePage("record1.html", { transition: "slide"});
@@ -628,7 +487,7 @@
 			});
 			
 			$("#noise3").live('swiperight', function (event, ui) {
-                $.mobile.changePage("essay1.html", { transition: "reverse slide"});
+                $.mobile.changePage("mort1.html", { transition: "reverse slide"});
 			});
 			$("#noise3").live('swipeleft', function (event, ui) {
                 $.mobile.changePage("record1.html", { transition: "slide"});
@@ -644,7 +503,7 @@
 			});
 			
 			$("#noise4").live('swiperight', function (event, ui) {
-                $.mobile.changePage("essay1.html", { transition: "reverse slide"});
+                $.mobile.changePage("mort1.html", { transition: "reverse slide"});
 			});
 			
 			$("#noise4").live('swipeleft', function (event, ui) {
@@ -659,32 +518,13 @@
 			
 			
 			$("#record1").live('swiperight', function (event, ui) {
-                $.mobile.changePage("know.html", { transition: "reverse slide"});
+                $.mobile.changePage("noise1.html", { transition: "reverse slide"});
 			});
 			$("#record1").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("disco1.html", { transition: "slide"});
-			});
-					$("#record1").live('swipeup', function (event, ui) {
-                $.mobile.changePage("record2.html", { transition: "slidedown"});
+                $.mobile.changePage("zoom1.html", { transition: "slide"});
 			});
 			
 			
-			
-					
-			<!--record2-->
-			
-			
-			
-			
-			$("#record2").live('swiperight', function (event, ui) {
-                $.mobile.changePage("know.html", { transition: "reverse slide"});
-			});
-			$("#record2").live('swipeleft', function (event, ui) {
-                $.mobile.changePage("disco1.html", { transition: "slide"});
-			});
-					$("#record2").live('swipedown', function (event, ui) {
-                $.mobile.changePage("record1.html", { transition: "slidedown"});
-			});
 			
 			<!--zoom1-->
 			
@@ -699,15 +539,15 @@
 			});
 			
 			
-			<!--disco1
+			<!--disco1-->
 	
 			
 			$("#disco1").live('swiperight', function (event, ui) {
-                $.mobile.changePage("record1.html", { transition: "reverse slide"});
+                $.mobile.changePage("zoom1.html", { transition: "reverse slide"});
 			});
-			<!--$("#disco1").live('swipeleft', function (event, ui) {
-                <!--$.mobile.changePage("credits1.html", { transition: "slide"});
-			<!--}); 
+			$("#disco1").live('swipeleft', function (event, ui) {
+                $.mobile.changePage("credits1.html", { transition: "slide"});
+			});
 			
 			<!--credits1-->
 	
@@ -744,55 +584,6 @@
     	</div>
    </div>
 </div>
-
-
-
- <script type="text/javascript">
-$(window).scroll(function(){
-	var top = $(window).scrollTop();
-	var img = $(".img");
-	var src = "img/imagine/";
-	if(top<525){
-		img.css({position:"absolute",top:581});
-	}
-	if(top>535){
-		img.css({position:"fixed",top:35});
-	}
-	if(top>0 && top<841){
-		img.attr("src",src+"1.jpg");
-	}
-	if(top>841 && top<1166){
-		img.attr("src",src+"2.jpg");
-	}
-	if(top>1166 && top<1492){
-		img.attr("src",src+"3.jpg");
-	}
-	if(top>1492 && top<1817){
-		img.attr("src",src+"4.jpg");
-	}
-	if(top>1817 && top<2143){
-		img.attr("src",src+"5.jpg");
-	}
-	if(top>2143 && top<1968){
-		img.attr("src",src+"6.jpg");
-	}
-	if(top>1968 && top<2294){
-		img.attr("src",src+"7.jpg");
-	}
-	if(top>2294 && top<2619){
-		img.attr("src",src+"8.jpg");
-	}
-	if(top>2619 && top<2945){
-		img.attr("src",src+"9.jpg");
-	}
-	if(top>2945 && top<3270){
-		img.attr("src",src+"10.jpg");
-	}
-	if(top>3270 && top<20000){
-		img.attr("src",src+"11.jpg");
-	}
-});
-</script>
 <!--<script type="text/javascript">
 
 $("body").live('swipeup',function() {
